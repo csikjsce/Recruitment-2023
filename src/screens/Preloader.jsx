@@ -59,7 +59,7 @@ const Preloader = () => {
 				<Container
 					className='flex justify-center items-center bg-[#efffff]'
 					style={styles}>
-					<Animation size={200} />
+					<Animation size={150} />
 				</Container>
 			)}
 		</>
