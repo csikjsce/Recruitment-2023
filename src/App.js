@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import routes from './router/router.jsx'
 import { Modal } from './components/exports'
+import { Preloader } from './screens/exports'
 
 function App() {
 	const [show, setShow] = useState(false)
@@ -23,14 +24,19 @@ function App() {
 	const router = createBrowserRouter(routes)
 
 	return !show ? (
-		<Modal
-			title='Unsupported Screen Size'
-			subtitle='Please use either a mobile or desktop device to view this site.'
-		/>
+		<>
+			<Preloader />
+			<Modal
+				title='Unsupported Screen Size'
+				subtitle='Please use either a mobile or desktop device to view this site.'
+			/>
+		</>
 	) : (
-		<RouterProvider router={router} />
+		<>
+			<Preloader />
+			<RouterProvider router={router} />
+		</>
 	)
-
 }
 
 export default App
