@@ -35,6 +35,7 @@ const FlexHeads = ({ isMobile }) => {
 							subtitle={item.subtitle}
 							image={item.image}
 							mobile={isMobile}
+							link='/info'
 						/>
 					)
 				})}
@@ -66,6 +67,7 @@ const FlexMembers = ({ isMobile }) => {
 							subtitle={item.subtitle}
 							image={item.image}
 							mobile={isMobile}
+							link="/info"
 						/>
 					)
 				})}
@@ -94,7 +96,7 @@ const Positions = () => {
 		<>
 			<Container
 				mobile={isMobile}
-				pt={true}
+				py={true}
 				className='!justify-center !items-center'>
 				<FlexCol className='!items-start !gap-16'>
 					<ScreenTitle

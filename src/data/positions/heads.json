@@ -2,26 +2,26 @@
     {
         "title":"General Secretary",
         "subtitle":"The leader of the team, ensuring that the team is on the right track to success.",
-        "image":"/positions/heads/gensec.png"
+        "image":"/assets/positions/heads/gensec.png"
     },
     {
         "title": "Finance Head",
         "subtitle": "The financial backbone of the team, ensuring smart financial management.",
-        "image": "/positions/heads/finhead.png"
+        "image": "/assets/positions/heads/finhead.png"
     },
     {
         "title": "Technical Head",
         "subtitle": "Passion and innovation come together to create game-changing solutions.",
-        "image": "/positions/heads/techhead.png"
+        "image": "/assets/positions/heads/techhead.png"
     },
     {
         "title": "Operations Head",
         "subtitle": "The backbone of the team, ensuring that everything runs smoothly and efficiently.",
-        "image": "/positions/heads/ophead.png"
+        "image": "/assets/positions/heads/ophead.png"
     },
     {
         "title": "Creative Head",
         "subtitle": "The creative mind behind the team, bringing ideas to life for a beautiful tomorrow.",
-        "image": "/positions/heads/crhead.png"
+        "image": "/assets/positions/heads/crhead.png"
     }
 ]
