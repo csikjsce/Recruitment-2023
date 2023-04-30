@@ -1,9 +1,11 @@
+import './index.css'
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import routes from './router/router.jsx'
+
 function App() {
-  return (
-		<>
-			<h1 className='text-3xl font-bold underline'>Recruitment 2023</h1>
-		</>
-	)
+	const router = createBrowserRouter(routes)
+	return <RouterProvider router={router} />
 }
 
-export default App;
+export default App
