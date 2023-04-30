@@ -1,47 +1,76 @@
 import React, { useState, useEffect } from 'react'
-import { Container, HeadsCard, MembersCard, Flex, FlexCol } from '../utilities/exports'
+import {
+	Container,
+	HeadsCard,
+	MembersCard,
+	Flex,
+	FlexCol,
+	PositionSubtitle,
+	PositionSubtitleMobile,
+	ScreenTitle,
+} from '../utilities/exports'
 import heads_data from '../data/positions/heads.json'
-import members_data from '../data/positions/heads.json'
+import members_data from '../data/positions/members.json'
 
 const FlexHeads = ({ isMobile }) => {
 	return (
-		<Flex
-			className='!justify-start'
-			direction={isMobile ? 'col' : 'row'}
-			gap={isMobile ? 'gap-20' : ''}>
-			{heads_data.map((item, index) => {
-				return (
-					<HeadsCard
-						key={index}
-						title={item.title}
-						subtitle={item.subtitle}
-						image={item.image}
-						mobile={isMobile}
-					/>
-				)
-			})}
-		</Flex>
+		<FlexCol className='!items-start !justify-center'>
+			{!isMobile ? (
+				<PositionSubtitle text='Lead the pack as a TY Student' />
+			) : (
+				<PositionSubtitleMobile
+					text='Lead the pack'
+					subtext='as a TY student'
+				/>
+			)}
+			<Flex
+				className='!justify-start'
+				direction={isMobile ? 'col' : 'row'}
+				gap={isMobile ? 'gap-0' : 'gap-10'}>
+				{heads_data.map((item, index) => {
+					return (
+						<HeadsCard
+							key={index}
+							title={item.title}
+							subtitle={item.subtitle}
+							image={item.image}
+							mobile={isMobile}
+						/>
+					)
+				})}
+			</Flex>
+		</FlexCol>
 	)
 }
 
 const FlexMembers = ({ isMobile }) => {
 	return (
-		<Flex
-			className='!justify-start'
-			direction={isMobile ? 'col' : 'row'}
-			gap={isMobile ? 'gap-20' : ''}>
-			{members_data.map((item, index) => {
-				return (
-					<MembersCard
-						key={index}
-						title={item.title}
-						subtitle={item.subtitle}
-						image={item.image}
-						mobile={isMobile}
-					/>
-				)
-			})}
-		</Flex>
+		<FlexCol className='!items-start !justify-center'>
+			{!isMobile ? (
+				<PositionSubtitle text='Flourish in a team as a SY Student' />
+			) : (
+				<PositionSubtitleMobile
+					text='Flourish in a team'
+					subtext='as a SY student'
+				/>
+			)}
+			<Flex
+				className='!justify-start'
+				direction={isMobile ? 'col' : 'row'}
+				gap={isMobile ? 'gap-0' : 'gap-10'}>
+				{members_data.map((item, index) => {
+					return (
+						<MembersCard
+							key={index}
+							title={item.title}
+							subtitle={item.subtitle}
+							image={item.image}
+							mobile={isMobile}
+						/>
+					)
+				})}
+			</Flex>
+		</FlexCol>
 	)
 }
 
@@ -65,10 +94,17 @@ const Positions = () => {
 		<>
 			<Container
 				mobile={isMobile}
-				className={`!px-4 ${!isMobile ? 'overflow-hidden' : ''}`}>
-				<FlexCol>
-					<FlexHeads isMobile={isMobile} />
-					<FlexMembers isMobile={isMobile} />
+				pt={true}
+				className='!justify-center !items-center'>
+				<FlexCol className='!items-start !gap-16'>
+					<ScreenTitle
+						title={isMobile ? 'Pick your team.' : 'Ready to join forces? Pick your team.'}
+						mobile={isMobile}
+					/>
+					<FlexCol className='!items-start gap-24 pl-4'>
+						<FlexHeads isMobile={isMobile} />
+						<FlexMembers isMobile={isMobile} />
+					</FlexCol>
 				</FlexCol>
 			</Container>
 		</>

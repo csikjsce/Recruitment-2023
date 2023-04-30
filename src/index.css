@@ -13,7 +13,11 @@ body {
   background-position: right top;
   background-repeat: no-repeat;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 @tailwind base;

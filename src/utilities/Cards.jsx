@@ -15,13 +15,13 @@ const ModalCard = ({ title, subtitle }) => {
 const HeadsCard = ({ title, subtitle, image, mobile }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 shadow-xl gap-1 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
 		size
 	return (
 		<>
-			<FlexCol>
+			<FlexCol className='hover:-translate-y-4 duration-300'>
 				<img
-					src={image}
+					src={'/assets/positions/heads/finhead.png'}
 					alt='asset'
 					className='w-[130px] translate-y-16'
 				/>
@@ -37,13 +37,13 @@ const HeadsCard = ({ title, subtitle, image, mobile }) => {
 const MembersCard = ({ title, subtitle, image, mobile }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 shadow-xl gap-1 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
 		size
 	return (
 		<>
-			<FlexCol>
+			<FlexCol className='hover:-translate-y-4 duration-300'>
 				<img
-					src={image}
+					src={'/assets/positions/heads/ophead.png'}
 					alt='asset'
 					className='w-[130px] translate-y-16'
 				/>

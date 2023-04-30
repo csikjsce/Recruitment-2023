@@ -1,6 +1,7 @@
 import Container from './Container'
 import { ModalCard, HeadsCard, MembersCard } from './Cards'
 import { LandingButton } from './Buttons'
+import ScreenTitle from './ScreenTitle'
 import { Flex, FlexRow, FlexCol } from './Flex'
 import {
 	LandingTitle,
@@ -10,6 +11,9 @@ import {
 	ModalSubtitle,
 	CardTitle,
 	CardSubtitle,
+	PositionSubtitle,
+	PositionSubtitleMobile,
+	ScreenText,
 } from './Typography'
 
 export {
@@ -28,4 +32,8 @@ export {
 	MembersCard,
 	CardTitle,
 	CardSubtitle,
+	PositionSubtitle,
+	PositionSubtitleMobile,
+	ScreenTitle,
+	ScreenText,
 }

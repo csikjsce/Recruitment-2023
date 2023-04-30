@@ -1,6 +1,6 @@
 const Flex = ({ className, children, style, direction, gap }) => {
 	const dir = direction === "col" ? ' flex-col' : ' flex-row'
-	const classes = gap + ' flex justify-center items-center w-full ' + className + dir
+	const classes = gap + ' flex justify-center items-center ' + className + dir
 	return (
 		<div
 			className={classes}
