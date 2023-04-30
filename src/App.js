@@ -34,7 +34,9 @@ function App() {
 	) : (
 		<>
 			<Preloader />
-			<RouterProvider router={router} />
+			<RouterProvider router={router}>
+				<Preloader />
+			</RouterProvider>
 		</>
 	)
 }
