@@ -1,10 +1,19 @@
 import Container from './Container'
-import { ModalCard } from './Cards'
+import { ModalCard, HeadsCard, MembersCard } from './Cards'
 import { LandingButton } from './Buttons'
-import { FlexRow, FlexCol } from './Flex'
-import { LandingTitle, LandingSubtitle, LandingPara, ModalTitle, ModalSubtitle } from './Typography'
+import { Flex, FlexRow, FlexCol } from './Flex'
+import {
+	LandingTitle,
+	LandingSubtitle,
+	LandingPara,
+	ModalTitle,
+	ModalSubtitle,
+	CardTitle,
+	CardSubtitle,
+} from './Typography'
 
 export {
+	Flex,
 	FlexRow,
 	FlexCol,
 	LandingTitle,
@@ -15,4 +24,8 @@ export {
 	ModalTitle,
 	ModalSubtitle,
 	ModalCard,
-    }
+	HeadsCard,
+	MembersCard,
+	CardTitle,
+	CardSubtitle,
+}

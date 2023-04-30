@@ -1,3 +1,15 @@
+const Flex = ({ className, children, style, direction, gap }) => {
+	const dir = direction === "col" ? ' flex-col' : ' flex-row'
+	const classes = gap + ' flex justify-center items-center w-full ' + className + dir
+	return (
+		<div
+			className={classes}
+			style={style}>
+			{children}
+		</div>
+	)
+}
+
 const FlexRow = ({ className, children, style }) => {
 	const classes = 'flex justify-center items-center w-full ' + className
 	return (
@@ -20,4 +32,4 @@ const FlexCol = ({ className, children, style }) => {
 	)
 }
 
-export { FlexRow, FlexCol }
+export { Flex, FlexRow, FlexCol }
