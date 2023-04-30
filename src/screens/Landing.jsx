@@ -1,5 +1,5 @@
 import React from 'react'
-import { LandingContent } from '../components/exports'
+import { LandingContent, LandingAsset } from '../components/exports'
 import { Container } from '../utilities/exports'
 
 const Landing = () => {
@@ -7,7 +7,8 @@ const Landing = () => {
 	return (
 		<>
 			<Container className={direction}>
-				<LandingContent />
+        <LandingContent />
+        <LandingAsset />
 			</Container>
 		</>
 	)

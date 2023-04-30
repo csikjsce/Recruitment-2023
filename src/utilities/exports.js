@@ -1,5 +1,6 @@
-import Container from './Container';
-import { FlexRow, FlexCol } from './Flex';
+import Container from './Container'
+import { LandingButton } from './Buttons'
+import { FlexRow, FlexCol } from './Flex'
 import { LandingTitle, LandingSubtitle, LandingPara } from './Typography'
 
-export { FlexRow, FlexCol, LandingTitle, LandingSubtitle, LandingPara, Container }
+export { FlexRow, FlexCol, LandingTitle, LandingSubtitle, LandingPara, Container, LandingButton }
