@@ -67,7 +67,7 @@ const CardSubtitle = ({ text, mobile }) => {
 }
 
 const PositionSubtitle = ({ text }) => {
-	const classes = `font-medium text-[#1E293B] leading-relaxed translate-x-4 text-[1.4rem]`
+	const classes = `font-medium text-[#1E293B] leading-relaxed text-[1.4rem]`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>
@@ -76,8 +76,8 @@ const PositionSubtitle = ({ text }) => {
 }
 
 const PositionSubtitleMobile = ({ text, subtext }) => {
-	const classes_text = `font-medium text-[#1E293B] leading-relaxed translate-x-1 text-[1.45rem]`
-	const classes_subtext = `font-normal text-[#1E293B] leading-relaxed translate-x-1 text-[0.9rem]`
+	const classes_text = `font-medium text-[#1E293B] leading-relaxed text-[1.45rem]`
+	const classes_subtext = `font-normal text-[#1E293B] leading-relaxed text-[0.9rem]`
 	return (
 		<>
 			<FlexCol className='!items-start !justify-center'>

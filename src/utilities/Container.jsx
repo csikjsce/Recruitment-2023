@@ -1,5 +1,5 @@
-const Container = ({ children, className, mobile, style, py }) => {
-	const direction = mobile ? 'flex-col' : 'flex-row'
+const Container = ({ children, className, mobile, style, py, dir }) => {
+	const direction = dir === "col" ? 'flex-col' : 'flex-row'
 	const flex_gap = mobile ? 'gap-6' : ''
 	const padding_x = mobile ? 'px-10' : 'px-24'
 	const padding_y = mobile || py ? 'py-20' : ''

@@ -39,7 +39,6 @@ const LandingText = () => {
 				<FlexCol className={`!items-start ${isMobile ? "!mt-4" : "!mt-8"}`}>
 					<LandingButton
 						text='Get Started'
-						link='/positions'
 						mobile={isMobile}
 					/>
 				</FlexCol>

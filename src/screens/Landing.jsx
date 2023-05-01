@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { LandingContent, LandingAsset } from '../components/exports'
-import { Container } from '../utilities/exports'
+import { LandingContent, LandingAsset, Positions } from '../components/exports'
+import { Container, Flex } from '../utilities/exports'
 
 const Landing = () => {
 	const [isMobile, setIsMobile] = useState(null)
@@ -20,9 +20,16 @@ const Landing = () => {
 
 	return (
 		<>
-			<Container mobile={isMobile} className={`${!isMobile ? "overflow-hidden" : ""}`}>
-				<LandingContent />
-				<LandingAsset mobile={isMobile} />
+			<Container
+				dir='col'
+				mobile={isMobile}>
+				<Flex
+					className='!justify-between !min-h-screen'
+					direction={isMobile ? 'col' : 'row'}>
+					<LandingContent />
+					<LandingAsset mobile={isMobile} />
+				</Flex>
+				<Positions isMobile={isMobile} />
 			</Container>
 		</>
 	)

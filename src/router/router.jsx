@@ -1,14 +1,10 @@
 import React from 'react';
-import { Landing, Info, Form, Positions } from '../screens/exports';
+import { Landing, Info, Form } from '../screens/exports';
 
 const routes = [
 	{
 		path: '/',
 		element: <Landing />,
-    },
-    {
-        path: '/positions',
-        element: <Positions />,
     },
     {
         path: '/info',

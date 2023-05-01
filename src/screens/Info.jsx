@@ -41,7 +41,7 @@ const Info = () => {
 					title='Information Page'
 					mobile={isMobile}
 				/>
-				{data && <h1>{data.key}</h1>}
+				{data && ( <h1>{data.key}</h1> )}
 			</FlexCol>
 		</Container>
 	)
