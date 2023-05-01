@@ -7,6 +7,7 @@ const BackIcon = () => {
 			src={'/assets/icons/back.svg'}
 			alt={'back'}
 			loading='lazy'
+			className='cursor-pointer'
 			style={{
 				width: '22px',
 				height: '22px',
