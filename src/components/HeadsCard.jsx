@@ -7,8 +7,9 @@ import {
 } from '../utilities/exports'
 import heads_data from '../data/positions/heads.json'
 import { useNavigate } from 'react-router-dom'
+import { memo } from 'react'
 
-const FlexHeads = ({ isMobile }) => {
+const FlexHeads = memo(({ isMobile }) => {
 	const navigate = useNavigate()
 	return (
 		<FlexCol className='!items-start !justify-center -space-y-4'>
@@ -43,6 +44,6 @@ const FlexHeads = ({ isMobile }) => {
 			</Flex>
 		</FlexCol>
 	)
-}
+})
 
 export default FlexHeads;

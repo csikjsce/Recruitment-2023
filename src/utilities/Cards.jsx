@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { memo } from 'react'
 import { FlexCol } from './Flex'
 import { ModalTitle, ModalSubtitle, CardTitle, CardSubtitle } from './Typography'
 
@@ -13,20 +13,21 @@ const ModalCard = ({ title, subtitle }) => {
 	)
 }
 
-const HeadsCard = ({ title, subtitle, image, mobile, onClick }) => {
+const HeadsCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-100 ' +
 		size
 	return (
 		<>
 			<div
 				onClick={onClick}
 				className='cursor-pointer'>
-				<FlexCol className='hover:-translate-y-4 duration-300'>
+				<FlexCol className='hover:-translate-y-5 duration-100'>
 					<img
 						src={image}
 						alt='asset'
+						loading='lazy'
 						className='h-[165px] translate-y-16'
 					/>
 					<FlexCol className={classes}>
@@ -37,22 +38,23 @@ const HeadsCard = ({ title, subtitle, image, mobile, onClick }) => {
 			</div>
 		</>
 	)
-}
+})
 
-const MembersCard = ({ title, subtitle, image, mobile, onClick }) => {
+const MembersCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-100 ' +
 		size
 	return (
 		<>
 			<div
 				onClick={onClick}
 				className='cursor-pointer'>
-				<FlexCol className='hover:-translate-y-4 duration-300'>
+				<FlexCol className='hover:-translate-y-5 duration-100'>
 					<img
 						src={image}
 						alt='asset'
+						loading='lazy'
 						className='h-[150px] translate-y-16'
 					/>
 					<FlexCol className={classes}>
@@ -63,6 +65,6 @@ const MembersCard = ({ title, subtitle, image, mobile, onClick }) => {
 			</div>
 		</>
 	)
-}
+})
 
 export { ModalCard, HeadsCard, MembersCard }

@@ -7,8 +7,9 @@ import {
 } from '../utilities/exports'
 import members_data from '../data/positions/members.json'
 import { useNavigate } from 'react-router-dom'
+import { memo } from 'react'
 
-const FlexMembers = ({ isMobile }) => {
+const FlexMembers = memo(({ isMobile }) => {
 	const navigate = useNavigate()
 	return (
 		<FlexCol className='!items-start !justify-center -space-y-4'>
@@ -43,6 +44,6 @@ const FlexMembers = ({ isMobile }) => {
 			</Flex>
 		</FlexCol>
 	)
-}
+})
 
 export default FlexMembers

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { memo, useState, useEffect } from 'react'
 import { Container } from '../utilities/exports'
 import Lottie from 'react-lottie'
 import animationData from '../data/animations/animation.json'
 
-const Animation = ({ size }) => {
+const Animation = memo(({ size }) => {
 	const defaultOptions = {
 		loop: true,
 		autoplay: true,
@@ -19,9 +19,9 @@ const Animation = ({ size }) => {
 			width={size}
 		/>
 	)
-}
+})
 
-const Preloader = () => {
+const Preloader = memo(() => {
 	const [showPreloader, setShowPreloader] = useState(true)
 
 	const styles = {
@@ -39,7 +39,7 @@ const Preloader = () => {
 	useEffect(() => {
 		const timeoutId = setTimeout(() => {
 			setShowPreloader(false)
-		}, 3000)
+		}, 5000)
 
 		return () => clearTimeout(timeoutId)
 	}, [])
@@ -64,6 +64,6 @@ const Preloader = () => {
 			)}
 		</>
 	)
-}
+})
 
 export default Preloader
