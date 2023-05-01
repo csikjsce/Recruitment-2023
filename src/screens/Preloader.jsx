@@ -59,7 +59,7 @@ const Preloader = memo(() => {
 				<Container
 					className='flex justify-center items-center bg-[#efffff]'
 					style={styles}>
-					<Animation size={150} />
+					<Animation size={300} />
 				</Container>
 			)}
 		</>

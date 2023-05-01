@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { LandingContent, LandingAsset, Positions } from '../components/exports'
+import { LandingContent, LandingAsset, Positions, Navbar } from '../components/exports'
 import { Container, Flex } from '../utilities/exports'
 
 const Landing = () => {
@@ -32,6 +32,7 @@ const Landing = () => {
 			<Container
 				dir='col'
 				mobile={isMobile}>
+				<Navbar mobile={isMobile} />
 				<Flex
 					className='!justify-between !min-h-screen'
 					direction={isMobile ? 'col' : 'row'}>

@@ -95,6 +95,24 @@ const ScreenText = ({ text }) => {
 			<h1 className={classes}>{text}</h1>
 		</>
 	)
+} 
+
+const NavbarTitle = ({ text }) => {
+	return (
+		<>
+			<h1 className='font-semibold text-[#2D2D2D] leading-relaxed tracking-wider text-[1.3rem]'>
+				{text}
+			</h1>
+		</>
+	)
+}
+
+const NavbarSubtitle = ({ text }) => {
+	return (
+		<>
+			<h1 className='font-normal text-[#2D2D2D] leading-relaxed text-[1.05rem]'>{text}</h1>
+		</>
+	)
 }
 
 export {
@@ -108,4 +126,6 @@ export {
 	PositionSubtitle,
 	PositionSubtitleMobile,
 	ScreenText,
+	NavbarTitle,
+	NavbarSubtitle,
 }

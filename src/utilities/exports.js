@@ -14,6 +14,8 @@ import {
 	PositionSubtitle,
 	PositionSubtitleMobile,
 	ScreenText,
+	NavbarTitle,
+	NavbarSubtitle,
 } from './Typography'
 
 export {
@@ -36,4 +38,6 @@ export {
 	PositionSubtitleMobile,
 	ScreenTitle,
 	ScreenText,
+	NavbarTitle,
+	NavbarSubtitle,
 }
