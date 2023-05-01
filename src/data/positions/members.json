@@ -3,24 +3,24 @@
 		"key": "members-finteam",
 		"title": "Finance Team",
 		"subtitle": "Our smart strategies empower success, providing a solid foundation for growth.",
-		"image": "/assets/positions/members/finteam.svg"
+		"image": "/assets/positions/members/finteam.png"
 	},
 	{
 		"key": "members-techteam",
 		"title": "Technical Team",
 		"subtitle": "Our team turns your ideas into reality, using the latest technology and expertise",
-		"image": "/assets/positions/members/techteam.svg"
+		"image": "/assets/positions/members/techteam.png"
 	},
 	{
 		"key": "members-opteam",
 		"title": "Operations Team",
 		"subtitle": "We streamline processes and optimize outcomes, ensuring smooth operations.",
-		"image": "/assets/positions/heads/ophead.png"
+		"image": "/assets/positions/members/opteam.png"
 	},
 	{
 		"key": "members-crteam",
 		"title": "Creative Team",
 		"subtitle": "We turn imagination into innovation, pushing the boundaries of what's possible.",
-		"image": "/assets/positions/members/crteam.svg"
+		"image": "/assets/positions/members/crteam.png"
 	}
 ]
