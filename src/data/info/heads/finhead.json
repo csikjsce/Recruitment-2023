@@ -1,3 +1,10 @@
 {
-	"key": "Finance Head"
+	"title": "Financial Secretary",
+	"for": "TY Students",
+	"about": "BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH",
+	"responsibilities": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"skills": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"perks": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"procedure": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"openings": [1, 1]
 }

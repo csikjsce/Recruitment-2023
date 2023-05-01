@@ -35,13 +35,12 @@ const Info = () => {
 		<Container
 			mobile={isMobile}
 			py={true}
-			className='!justify-start !items-start'>
+			className={`!justify-start !items-start ${isMobile ? "!px-6" : ""}`}>
 			<FlexCol className='!items-start !gap-16'>
 				<ScreenTitle
-					title='Information Page'
+					title={data?.title}
 					mobile={isMobile}
 				/>
-				{data && ( <h1>{data.key}</h1> )}
 			</FlexCol>
 		</Container>
 	)

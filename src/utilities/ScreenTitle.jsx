@@ -10,7 +10,7 @@ const BackIcon = () => {
 			className='cursor-pointer'
 			style={{
 				width: '22px',
-				height: '22px',
+				height: '24px',
 			}}
 			onClick={() => {
 				window.history.back()
