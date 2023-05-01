@@ -16,14 +16,14 @@ const ModalCard = ({ title, subtitle }) => {
 const HeadsCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 lg:hover:shadow-lg shadow-md gap-1 ' +
 		size
 	return (
 		<>
 			<div
 				onClick={onClick}
-				className='cursor-pointer'>
-				<FlexCol className='hover:-translate-y-5'>
+				className='cursor-pointer lg:hover:-translate-y-3 transition-all'>
+				<FlexCol>
 					<img
 						src={image}
 						alt='asset'
@@ -43,14 +43,14 @@ const HeadsCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 const MembersCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
-		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 ' +
+		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 lg:hover:shadow-lg shadow-md gap-1 ' +
 		size
 	return (
 		<>
 			<div
 				onClick={onClick}
-				className='cursor-pointer'>
-				<FlexCol className='hover:-translate-y-5'>
+				className='cursor-pointer lg:hover:-translate-y-3 transition-all'>
+				<FlexCol>
 					<img
 						src={image}
 						alt='asset'
