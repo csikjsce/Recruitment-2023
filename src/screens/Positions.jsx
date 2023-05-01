@@ -11,8 +11,10 @@ import {
 } from '../utilities/exports'
 import heads_data from '../data/positions/heads.json'
 import members_data from '../data/positions/members.json'
+import { useNavigate } from 'react-router-dom'
 
 const FlexHeads = ({ isMobile }) => {
+	const navigate = useNavigate()
 	return (
 		<FlexCol className='!items-start !justify-center'>
 			{!isMobile ? (
@@ -30,12 +32,16 @@ const FlexHeads = ({ isMobile }) => {
 				{heads_data.map((item, index) => {
 					return (
 						<HeadsCard
-							key={index}
+							key={item.key}
 							title={item.title}
 							subtitle={item.subtitle}
 							image={item.image}
 							mobile={isMobile}
-							link='/info'
+							onClick={() => {
+								navigate('/info', {
+									state: { key: item.key },
+								})
+							}}
 						/>
 					)
 				})}
@@ -45,6 +51,7 @@ const FlexHeads = ({ isMobile }) => {
 }
 
 const FlexMembers = ({ isMobile }) => {
+	const navigate = useNavigate()
 	return (
 		<FlexCol className='!items-start !justify-center'>
 			{!isMobile ? (
@@ -62,12 +69,16 @@ const FlexMembers = ({ isMobile }) => {
 				{members_data.map((item, index) => {
 					return (
 						<MembersCard
-							key={index}
+							key={item.key}
 							title={item.title}
 							subtitle={item.subtitle}
 							image={item.image}
 							mobile={isMobile}
-							link="/info"
+							onClick={() => {
+								navigate('/info', {
+									state: { key: item.key },
+								})
+							}}
 						/>
 					)
 				})}

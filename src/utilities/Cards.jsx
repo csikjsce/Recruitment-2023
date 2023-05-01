@@ -13,23 +13,17 @@ const ModalCard = ({ title, subtitle }) => {
 	)
 }
 
-const HeadsCard = ({ title, subtitle, image, mobile, link }) => {
-	const navigate = useNavigate()
+const HeadsCard = ({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
 		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
 		size
-	const handleClick = () => {
-		navigate(link)
-	}
 	return (
 		<>
 			<div
-				onClick={handleClick}
+				onClick={onClick}
 				className='cursor-pointer'>
-				<FlexCol
-					className='hover:-translate-y-4 duration-300'
-					onClick={handleClick}>
+				<FlexCol className='hover:-translate-y-4 duration-300'>
 					<img
 						src={image}
 						alt='asset'
@@ -45,19 +39,15 @@ const HeadsCard = ({ title, subtitle, image, mobile, link }) => {
 	)
 }
 
-const MembersCard = ({ title, subtitle, image, mobile, link }) => {
-	const navigate = useNavigate()
+const MembersCard = ({ title, subtitle, image, mobile, onClick }) => {
 	const size = mobile ? '!w-[70vw]' : '!w-[15vw]'
 	const classes =
 		'!items-start !justify-end bg-[#FCFEFE80] border-2 border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 hover:shadow-2xl shadow-xl gap-1 duration-300 ' +
 		size
-	const handleClick = () => {
-		navigate(link)
-	}
 	return (
 		<>
 			<div
-				onClick={handleClick}
+				onClick={onClick}
 				className='cursor-pointer'>
 				<FlexCol className='hover:-translate-y-4 duration-300'>
 					<img
