@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { LandingContent, LandingAsset, Positions } from '../components/exports'
 import { Container, Flex } from '../utilities/exports'
 
@@ -18,6 +18,15 @@ const Landing = () => {
 		return () => window.removeEventListener('resize', handleResize)
 	}, [])
 
+	const contentRef = useRef(null);
+
+	const handleClick = () => {
+		contentRef.current?.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	}
+
 	return (
 		<>
 			<Container
@@ -26,10 +35,13 @@ const Landing = () => {
 				<Flex
 					className='!justify-between !min-h-screen'
 					direction={isMobile ? 'col' : 'row'}>
-					<LandingContent />
+					<LandingContent onClick={handleClick} />
 					<LandingAsset mobile={isMobile} />
 				</Flex>
-				<Positions isMobile={isMobile} />
+				<Positions
+					ref={contentRef}
+					isMobile={isMobile}
+				/>
 			</Container>
 		</>
 	)

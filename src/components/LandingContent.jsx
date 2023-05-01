@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FlexCol, LandingTitle, LandingSubtitle, LandingPara, LandingButton } from '../utilities/exports'
 
-const LandingText = () => {
+const LandingText = ({onClick}) => {
 	const [isMobile, setIsMobile] = useState(null)
 
 	useEffect(() => {
@@ -40,6 +40,7 @@ const LandingText = () => {
 					<LandingButton
 						text='Get Started'
 						mobile={isMobile}
+						onClick={onClick}
 					/>
 				</FlexCol>
 			</FlexCol>
