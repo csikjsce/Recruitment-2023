@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container, FlexCol, ScreenTitle } from '../utilities/exports'
 import { useLocation } from 'react-router-dom'
+import { JobDescription } from '../components/exports'
 
 const Info = () => {
 	const [isMobile, setIsMobile] = useState(null)
@@ -41,6 +42,7 @@ const Info = () => {
 					title={data?.title}
 					mobile={isMobile}
 				/>
+				<JobDescription data={data} route={parent_route} mobile={isMobile}/>
 			</FlexCol>
 		</Container>
 	)

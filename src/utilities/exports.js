@@ -1,5 +1,5 @@
 import Container from './Container'
-import { ModalCard, HeadsCard, MembersCard } from './Cards'
+import { ModalCard, HeadsCard, MembersCard, DescriptionCard } from './Cards'
 import { LandingButton } from './Buttons'
 import ScreenTitle from './ScreenTitle'
 import { Flex, FlexRow, FlexCol } from './Flex'
@@ -16,6 +16,10 @@ import {
 	ScreenText,
 	NavbarTitle,
 	NavbarSubtitle,
+	DescriptionTitle,
+	DescriptionFor,
+	DescriptionSubtitle,
+	DescriptionPara,
 } from './Typography'
 
 export {
@@ -40,4 +44,9 @@ export {
 	ScreenText,
 	NavbarTitle,
 	NavbarSubtitle,
+	DescriptionCard,
+	DescriptionTitle,
+	DescriptionFor,
+	DescriptionSubtitle,
+	DescriptionPara,
 }

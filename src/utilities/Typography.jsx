@@ -95,7 +95,7 @@ const ScreenText = ({ text }) => {
 			<h1 className={classes}>{text}</h1>
 		</>
 	)
-} 
+}
 
 const NavbarTitle = ({ text }) => {
 	return (
@@ -115,6 +115,50 @@ const NavbarSubtitle = ({ text }) => {
 	)
 }
 
+const DescriptionTitle = ({ text, mobile }) => {
+	const size = mobile ? 'text-[1.35rem]' : 'text-[1.4rem]'
+	const classes = `font-semibold text-[#252525] leading-relaxed ${size}`
+	return (
+		<>
+			<h1 className={classes}>{text}</h1>
+		</>
+	)
+}
+
+const DescriptionSubtitle = ({ text, mobile }) => {
+	const size = mobile ? 'text-[1.2rem]' : 'text-[1.25rem]'
+	const classes = `font-medium text-[#303030] leading-relaxed ${size}`
+	return (
+		<>
+			<h1 className={classes}>{text}</h1>
+		</>
+	)
+}
+
+const DescriptionPara = ({ text, mobile }) => {
+	const size = mobile ? 'text-[0.9rem]' : 'text-[1.1rem]'
+	const classes = `font-normal text-[#353535] text-justify leading-relaxed ${size}`
+	return (
+		<>
+			<h1 className={classes}>{text}</h1>
+		</>
+	)
+}
+
+const DescriptionFor = ({ text, mobile }) => {
+	const content = mobile ? text?.split(' ')[0] : text
+	const size = mobile ? 'text-[1rem]' : 'text-[1.1rem]'
+	const classes = `font-normal text-[#9d5171] leading-relaxed leading-relaxed ${size}`
+	const div_classes = `rounded-full border-2 border-[#9d5171] bg-[#9d517108] ${mobile ? 'px-3 py-0' : 'px-5 py-[2px]'}`
+	return (
+		<>
+			<div className={div_classes}>
+				<h1 className={classes}>{content}</h1>
+			</div>
+		</>
+	)
+}
+
 export {
 	LandingTitle,
 	LandingSubtitle,
@@ -128,4 +172,8 @@ export {
 	ScreenText,
 	NavbarTitle,
 	NavbarSubtitle,
+	DescriptionTitle,
+	DescriptionFor,
+	DescriptionSubtitle,
+	DescriptionPara,
 }
