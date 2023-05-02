@@ -1,13 +1,13 @@
 import React from 'react'
 import {
-	DescriptionCard,
-	FlexCol,
-	DescriptionTitle,
-	DescriptionFor,
-	FlexRow,
-	DescriptionSubtitle,
-	DescriptionPara,
+    FlexCol,
+    DescriptionTitle,
+    DescriptionFor,
+    FlexRow,
+    DescriptionSubtitle,
+    DescriptionPara,
 } from '../utilities/exports'
+
 
 const JobTitle = ({ data, mobile }) => {
 	return (
@@ -100,52 +100,9 @@ const JobOpenings = ({ data, mobile, route }) => {
 	)
 }
 
-const JobDescription = ({ data, route, mobile }) => {
-	return (
-		<>
-			<DescriptionCard>
-				<JobTitle
-					data={data}
-					mobile={mobile}
-				/>
-				<JobPara
-					data={data}
-					keyname='about'
-					title='About the Post'
-					mobile={mobile}
-				/>
-				<JobList
-					data={data}
-					keyname='responsibilities'
-					title='Responsibilities'
-					mobile={mobile}
-				/>
-				<JobList
-					data={data}
-					keyname='skills'
-					title='Skills Required'
-					mobile={mobile}
-				/>
-				<JobList
-					data={data}
-					keyname='perks'
-					title='Perks'
-					mobile={mobile}
-				/>
-				<JobList
-					data={data}
-					keyname='procedure'
-					title='Selection Procedure'
-					mobile={mobile}
-				/>
-				<JobOpenings
-					data={data}
-					route={route}
-					mobile={mobile}
-				/>
-			</DescriptionCard>
-		</>
-	)
+export {
+    JobTitle,
+    JobPara,
+    JobList,
+    JobOpenings,
 }
-
-export default JobDescription

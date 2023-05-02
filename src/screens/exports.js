@@ -1,6 +1,5 @@
 import Landing from './Landing';
-import Info from './Info';
-import Form from './Form';
+import Apply from './Apply';
 import Preloader from './Preloader';
 
-export { Landing, Info, Form, Preloader };
+export { Landing, Apply, Preloader };

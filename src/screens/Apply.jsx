@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Container, FlexCol, ScreenTitle } from '../utilities/exports'
 import { useLocation } from 'react-router-dom'
-import { JobDescription } from '../components/exports'
+import { JobDescription } from '../main/exports'
 
-const Info = () => {
+const Apply = () => {
 	const [isMobile, setIsMobile] = useState(null)
 	const [data, setData] = useState(null)
 
@@ -48,4 +48,4 @@ const Info = () => {
 	)
 }
 
-export default Info
+export default Apply

@@ -1,8 +1,8 @@
 import { Container, FlexCol, ScreenText } from '../utilities/exports'
-import { FlexHeads, FlexMembers } from '../components/exports'
+import { FlexHeads, FlexMembers } from './exports'
 import { forwardRef } from 'react'
 
-const Positions = forwardRef(({ isMobile }, ref) => {
+const JobPostings = forwardRef(({ isMobile }, ref) => {
 	return (
 		<>
 			<Container
@@ -21,4 +21,4 @@ const Positions = forwardRef(({ isMobile }, ref) => {
 	)
 })
 
-export default Positions
+export default JobPostings

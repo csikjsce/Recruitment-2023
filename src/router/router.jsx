@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landing, Info, Form } from '../screens/exports';
+import { Landing, Apply } from '../screens/exports';
 
 const routes = [
 	{
@@ -7,13 +7,9 @@ const routes = [
 		element: <Landing />,
     },
     {
-        path: '/info',
-        element: <Info />,
-    }, 
-    {
         path: '/apply',
-        element: <Form />,
-    }
+        element: <Apply />,
+    }, 
 ]
 
 export default routes;

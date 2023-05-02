@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { LandingContent, LandingAsset, Positions, Navbar } from '../components/exports'
+import { LandingContent, LandingAsset, JobPostings, LandingNav } from '../components/exports'
 import { Container, Flex } from '../utilities/exports'
 
 const Landing = () => {
@@ -18,13 +18,13 @@ const Landing = () => {
 		return () => window.removeEventListener('resize', handleResize)
 	}, [])
 
-	const contentRef = useRef(null);
+	const contentRef = useRef(null)
 
 	const handleClick = () => {
 		contentRef.current?.scrollIntoView({
 			behavior: 'smooth',
 			block: 'start',
-		});
+		})
 	}
 
 	return (
@@ -32,14 +32,14 @@ const Landing = () => {
 			<Container
 				dir='col'
 				mobile={isMobile}>
-				<Navbar mobile={isMobile} />
+				<LandingNav mobile={isMobile} />
 				<Flex
 					className='!justify-between !min-h-screen'
 					direction={isMobile ? 'col' : 'row'}>
 					<LandingContent onClick={handleClick} />
 					<LandingAsset mobile={isMobile} />
 				</Flex>
-				<Positions
+				<JobPostings
 					ref={contentRef}
 					isMobile={isMobile}
 				/>

@@ -34,7 +34,7 @@ const FlexMembers = memo(({ isMobile }) => {
 							image={item.image}
 							mobile={isMobile}
 							onClick={() => {
-								navigate('/info', {
+								navigate('/apply', {
 									state: { key: item.key },
 								})
 							}}

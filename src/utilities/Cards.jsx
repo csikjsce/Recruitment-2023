@@ -67,7 +67,7 @@ const MembersCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	)
 })
 
-const DescriptionCard = ({ children }) => {
+const CardContainer = ({ children }) => {
 	return (
 		<div className='bg-[#FCFEFE] p-10 rounded-md shadow-sm !w-full'>
 			<FlexCol className='!items-start !justify-center !space-y-2 gap-6'>
@@ -77,4 +77,4 @@ const DescriptionCard = ({ children }) => {
 	)	
 }
 
-export { ModalCard, HeadsCard, MembersCard, DescriptionCard }
+export { ModalCard, HeadsCard, MembersCard, CardContainer }

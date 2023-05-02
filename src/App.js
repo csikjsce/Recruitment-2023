@@ -2,7 +2,7 @@ import './index.css'
 import React, { useState, useEffect } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import routes from './router/router.jsx'
-import { Modal } from './components/exports'
+import { Unsupported } from './components/exports'
 import { Preloader } from './screens/exports'
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
 	return !show ? (
 		<>
 			<Preloader />
-			<Modal
+			<Unsupported
 				title='Unsupported Screen Size'
 				subtitle='Please use either a mobile or desktop device to view this site.'
 			/>
