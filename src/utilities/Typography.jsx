@@ -100,7 +100,7 @@ const ScreenText = ({ text }) => {
 const NavbarTitle = ({ text }) => {
 	return (
 		<>
-			<h1 className='font-semibold text-[#2D2D2D] leading-relaxed tracking-wider text-[1.3rem]'>
+			<h1 className='font-semibold text-[#2D2D2D] leading-relaxed tracking-wide text-[1.3rem]'>
 				{text}
 			</h1>
 		</>

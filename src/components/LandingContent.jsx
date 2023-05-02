@@ -36,7 +36,7 @@ const LandingText = ({onClick}) => {
 						text='Step into the world of technology and embark on a journey of growth and learning, with a team that is passionate about pushing boundaries and making a difference. '
 					/>
 				</FlexCol>
-				<FlexCol className={`!items-start ${isMobile ? "!mt-4" : "!mt-8"}`}>
+				<FlexCol className={`!items-start ${isMobile ? "!mt-6" : "!mt-10"}`}>
 					<LandingButton
 						text='Get Started'
 						mobile={isMobile}
