@@ -67,10 +67,12 @@ const MembersCard = memo(({ title, subtitle, image, mobile, onClick }) => {
 	)
 })
 
-const CardContainer = ({ children }) => {
+const CardContainer = ({ children, mobile, desc, form }) => {
+	const size = desc ? (!mobile ? '!w-[55%]' : '!w-full') : (!mobile ? '!w-[45%]' : '!w-full')
+	const classes = 'bg-[#FCFEFE] p-10 rounded-md shadow-md gap-10 ' + size
 	return (
-		<div className='bg-[#FCFEFE] p-10 rounded-md shadow-sm !w-full'>
-			<FlexCol className='!items-start !justify-center !space-y-2 gap-6'>
+		<div className={classes}>
+			<FlexCol className='!items-start !justify-center !space-y-2 gap-10'>
 				{children}
 			</FlexCol>
 		</div>

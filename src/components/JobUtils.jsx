@@ -51,7 +51,7 @@ const JobList = ({ data, mobile, keyname, title }) => {
 					text={title}
 					mobile={mobile}
 				/>
-				<ol className='!list-decimal !pl-4'>
+				<ol className='!list-decimal !pl-6'>
 					{data?.[keyname].map((item, index) => (
 						<li key={index}>
 							<DescriptionPara
@@ -67,6 +67,7 @@ const JobList = ({ data, mobile, keyname, title }) => {
 }
 
 const JobOpenings = ({ data, mobile, route }) => {
+	const gap = !mobile ? ['!gap-8', '!gap-3'] : ['!gap-6', '!gap-2']
 	return (
 		<>
 			<FlexCol className='!items-start'>
@@ -75,20 +76,28 @@ const JobOpenings = ({ data, mobile, route }) => {
 					mobile={mobile}
 				/>
 				{route === 'heads' ? (
-					<ul>
-						<li>
+					<>
+						<FlexRow className={`!justify-start !items-start ${gap[0]}`}>
 							<DescriptionPara
-								text={`${data?.title} : ${data?.openings[0]}`}
+								text={`${data?.title} : `}
 								mobile={mobile}
 							/>
-						</li>
-						<li>
 							<DescriptionPara
-								text={`Joint ${data?.title} : ${data?.openings[1]}`}
+								text={`${data?.openings[0]}`}
 								mobile={mobile}
 							/>
-						</li>
-					</ul>
+						</FlexRow>
+						<FlexRow className={`!justify-start !items-start ${gap[1]}`}>
+							<DescriptionPara
+								text={`Jt ${data?.title} : `}
+								mobile={mobile}
+							/>
+							<DescriptionPara
+								text={`${data?.openings[0]}`}
+								mobile={mobile}
+							/>
+						</FlexRow>
+					</>
 				) : (
 					<DescriptionPara
 						text={data?.openings}

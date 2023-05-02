@@ -3,7 +3,7 @@ import { NavbarTitle, NavbarSubtitle, FlexRow } from '../utilities/exports'
 
 const Navbar = ({ mobile }) => {
 	const display = mobile ? 'hidden' : ''
-	const classes = `!justify-between !py-3 !px-28 !fixed !top-0 !bg-[#F8F9FF] !z-50 border-b-[2px] ${display}`
+	const classes = `!justify-between !py-3 !px-24 !fixed !top-0 !bg-[#F8F9FF] !z-50 border-b-[2px] ${display}`
 	return (
 		<>
 			<FlexRow className={classes}>

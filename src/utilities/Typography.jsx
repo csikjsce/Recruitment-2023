@@ -117,7 +117,7 @@ const NavbarSubtitle = ({ text }) => {
 
 const DescriptionTitle = ({ text, mobile }) => {
 	const size = mobile ? 'text-[1.35rem]' : 'text-[1.4rem]'
-	const classes = `font-semibold text-[#252525] leading-relaxed ${size}`
+	const classes = `font-semibold text-[#303030] leading-relaxed ${size}`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>
@@ -136,8 +136,8 @@ const DescriptionSubtitle = ({ text, mobile }) => {
 }
 
 const DescriptionPara = ({ text, mobile }) => {
-	const size = mobile ? 'text-[0.9rem]' : 'text-[1.1rem]'
-	const classes = `font-normal text-[#353535] text-justify leading-relaxed ${size}`
+	const size = mobile ? 'text-[0.9rem]' : 'text-[1rem]'
+	const classes = `font-normal text-[#454545] text-justify leading-relaxed ${size}`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>
@@ -148,8 +148,10 @@ const DescriptionPara = ({ text, mobile }) => {
 const DescriptionFor = ({ text, mobile }) => {
 	const content = mobile ? text?.split(' ')[0] : text
 	const size = mobile ? 'text-[1rem]' : 'text-[1.1rem]'
-	const classes = `font-normal text-[#9d5171] leading-relaxed leading-relaxed ${size}`
-	const div_classes = `rounded-full border-2 border-[#9d5171] bg-[#9d517108] ${mobile ? 'px-3 py-0' : 'px-5 py-[2px]'}`
+	const classes = `font-normal text-[#B54B78] leading-relaxed leading-relaxed ${size}`
+	const div_classes = `rounded-full border-2 border-[#B54B78] bg-[#B54B7810] ${
+		mobile ? 'px-3' : 'px-5'
+	}`
 	return (
 		<>
 			<div className={div_classes}>

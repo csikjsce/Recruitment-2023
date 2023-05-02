@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Container, FlexCol, ScreenTitle } from '../utilities/exports'
+import { Container, Flex, FlexCol, ScreenTitle } from '../utilities/exports'
 import { useLocation } from 'react-router-dom'
-import { JobDescription } from '../main/exports'
+import { Form, JobDescription } from '../main/exports'
 
 const Apply = () => {
 	const [isMobile, setIsMobile] = useState(null)
@@ -32,17 +32,32 @@ const Apply = () => {
 		})
 	}, [parent_route])
 
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
+	const padding = isMobile ? "" : "!px-20 !py-16"
+
 	return (
 		<Container
 			mobile={isMobile}
 			py={true}
-			className={`!justify-start !items-start ${isMobile ? "!px-6" : ""}`}>
-			<FlexCol className='!items-start !gap-16'>
+			className={`${padding} ${isMobile ? '!px-6' : ''}`}>
+			<FlexCol className='!items-start !gap-12 !w-full'>
 				<ScreenTitle
 					title={data?.title}
 					mobile={isMobile}
 				/>
-				<JobDescription data={data} route={parent_route} mobile={isMobile}/>
+				<Flex
+					className='!justify-between !items-start !gap-4 !w-full'
+					direction={isMobile ? 'col' : 'row'}>
+					<JobDescription
+						data={data}
+						route={parent_route}
+						mobile={isMobile}
+					/>
+					<Form mobile={isMobile} />
+				</Flex>
 			</FlexCol>
 		</Container>
 	)
