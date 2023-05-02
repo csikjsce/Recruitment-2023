@@ -1,8 +1,11 @@
 import Container from './Container'
 import { ModalCard, HeadsCard, MembersCard, CardContainer } from './Cards'
-import { LandingButton } from './Buttons'
+import { Button } from './Buttons'
 import ScreenTitle from './ScreenTitle'
 import { Flex, FlexRow, FlexCol } from './Flex'
+import TextInput from './TextInput'
+import SelectInput from './SelectInput'
+import UploadInput from './UploadInput'
 import {
 	LandingTitle,
 	LandingSubtitle,
@@ -30,7 +33,7 @@ export {
 	LandingSubtitle,
 	LandingPara,
 	Container,
-	LandingButton,
+	Button,
 	ModalTitle,
 	ModalSubtitle,
 	ModalCard,
@@ -49,4 +52,7 @@ export {
 	DescriptionFor,
 	DescriptionSubtitle,
 	DescriptionPara,
+	TextInput,
+	SelectInput,
+	UploadInput,
 }

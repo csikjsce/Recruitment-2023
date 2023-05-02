@@ -25,7 +25,6 @@ function App() {
 
 	return !show ? (
 		<>
-			<Preloader />
 			<Unsupported
 				title='Unsupported Screen Size'
 				subtitle='Please use either a mobile or desktop device to view this site.'
@@ -33,7 +32,6 @@ function App() {
 		</>
 	) : (
 		<>
-			<Preloader />
 			<RouterProvider router={router}>
 				<Preloader />
 			</RouterProvider>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FlexCol, LandingTitle, LandingSubtitle, LandingPara, LandingButton } from '../utilities/exports'
+import { FlexCol, LandingTitle, LandingSubtitle, LandingPara, Button } from '../utilities/exports'
 
 const LandingText = ({onClick}) => {
 	const [isMobile, setIsMobile] = useState(null)
@@ -37,7 +37,7 @@ const LandingText = ({onClick}) => {
 					/>
 				</FlexCol>
 				<FlexCol className={`!items-start ${isMobile ? "!mt-6" : "!mt-10"}`}>
-					<LandingButton
+					<Button
 						text='Get Started'
 						mobile={isMobile}
 						onClick={onClick}

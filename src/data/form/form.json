@@ -1,0 +1,29 @@
+{
+    "branch": [
+        "COMPS",
+        "IT",
+        "EXCP",
+        "EXTC",
+        "ETRX",
+        "MECH"
+    ],
+    "year": [
+        "2025",
+        "2026"
+    ],
+    "preference": {
+        "2025" : [
+            "General Secretary",
+            "Financial Secretary",
+            "Technical Head",
+            "Creative Head",
+            "Operations Head"
+        ],
+        "2026" : [
+            "Finance Team",
+            "Technical Team",
+            "Creative Team",
+            "Operations Team"
+        ]
+    }
+}
