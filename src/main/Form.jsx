@@ -15,7 +15,7 @@ const Form = ({ mobile }) => {
 		<>
 			<CardContainer
 				form={true}
-				className={mobile ? "!px-6" : ""}
+				className={mobile ? '!px-8' : ''}
 				mobile={mobile}>
 				<DescriptionTitle
 					text='Application Form'
@@ -49,12 +49,12 @@ const Form = ({ mobile }) => {
 					/>
 					<TextInput
 						label='Why do you want to be a part of the CSI-KJSCE?'
-						placeholder='Why do you want to be a part of the CSI-KJSCE?'
+						placeholder={mobile ? 'Why do you want to be a part of the CSI-KJSCE?' : null}
 						rows='4'
 					/>
 					<TextInput
 						label='What makes you a strong candidate for the CSI-KJSCE?'
-						placeholder='What makes you a strong candidate for the CSI-KJSCE?'
+						placeholder={mobile ? 'What makes you a strong candidate for the CSI-KJSCE?' : null}
 						rows='4'
 					/>
 					<UploadInput />

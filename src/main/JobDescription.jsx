@@ -8,7 +8,7 @@ const JobDescription = ({ data, route, mobile }) => {
 			<CardContainer
 				desc={true}
 				mobile={mobile}
-				className={mobile ? '!px-6' : ''}>
+				className={mobile ? '!px-8' : ''}>
 				<JobTitle
 					data={data}
 					mobile={mobile}
