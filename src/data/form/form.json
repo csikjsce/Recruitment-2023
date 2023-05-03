@@ -13,12 +13,16 @@
     ],
     "preference": {
         "2025" : [
-            "General Secretary",
-            "Financial Secretary",
-            "Technical Head",
-            "Creative Head",
-            "Operations Head"
-        ],
+					"General Secretary",
+					"Jt General Secretary",
+					"Financial Secretary",
+					"Technical Head",
+                    "Jt Technical Head",
+					"Creative Head",
+					"Jt Creative Head",
+					"Operations Head",
+					"Jt Operations Head"
+				],
         "2026" : [
             "Finance Team",
             "Technical Team",

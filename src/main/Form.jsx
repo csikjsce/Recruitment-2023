@@ -15,6 +15,7 @@ const Form = ({ mobile }) => {
 		<>
 			<CardContainer
 				form={true}
+				className={mobile ? "!px-6" : ""}
 				mobile={mobile}>
 				<DescriptionTitle
 					text='Application Form'
@@ -47,13 +48,19 @@ const Form = ({ mobile }) => {
 						menu={data?.preference[2025]}
 					/>
 					<TextInput
-						label='What excites you the most to join CSI-KJSCE?'
-						rows='3'
+						label='Why do you want to be a part of the CSI-KJSCE?'
+						placeholder='Why do you want to be a part of the CSI-KJSCE?'
+						rows='4'
+					/>
+					<TextInput
+						label='What makes you a strong candidate for the CSI-KJSCE?'
+						placeholder='What makes you a strong candidate for the CSI-KJSCE?'
+						rows='4'
 					/>
 					<UploadInput />
 					<Button
 						text='Submit Application'
-						className='!px-6 !mt-10' 
+						className='!px-6 !mt-10'
 						mobile={true}
 					/>
 				</FlexCol>

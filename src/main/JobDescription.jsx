@@ -5,12 +5,15 @@ import { JobList, JobPara, JobTitle, JobOpenings } from '../components/exports'
 const JobDescription = ({ data, route, mobile }) => {
 	return (
 		<>
-			<CardContainer desc={true} mobile={mobile}>
+			<CardContainer
+				desc={true}
+				mobile={mobile}
+				className={mobile ? '!px-6' : ''}>
 				<JobTitle
 					data={data}
 					mobile={mobile}
 				/>
-				<FlexCol className="!gap-8">
+				<FlexCol className='!gap-8'>
 					<JobPara
 						data={data}
 						keyname='about'

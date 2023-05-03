@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextField } from '@mui/material'
 
-const TextInput = ({ label, rows }) => {
+const TextInput = ({ label, rows, placeholder }) => {
 	const multiline = rows ? true : false
 
 	const [value, setValue] = React.useState('')
@@ -14,6 +14,7 @@ const TextInput = ({ label, rows }) => {
 		<>
 			<TextField
 				label={label}
+				placeholder={placeholder}
 				variant='outlined'
 				multiline={multiline}
                 rows={rows}
