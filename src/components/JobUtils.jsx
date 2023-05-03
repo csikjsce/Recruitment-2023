@@ -1,13 +1,12 @@
 import React from 'react'
 import {
-    FlexCol,
-    DescriptionTitle,
-    DescriptionFor,
-    FlexRow,
-    DescriptionSubtitle,
-    DescriptionPara,
+	FlexCol,
+	DescriptionTitle,
+	DescriptionFor,
+	FlexRow,
+	DescriptionSubtitle,
+	DescriptionPara,
 } from '../utilities/exports'
-
 
 const JobTitle = ({ data, mobile }) => {
 	return (
@@ -43,6 +42,31 @@ const JobPara = ({ data, mobile, keyname, title }) => {
 	)
 }
 
+const JobProcedure = ({ data, mobile, keyname, title }) => {
+	return (
+		<>
+			<FlexCol className='!items-start !gap-2'>
+				<DescriptionSubtitle
+					text={title}
+					mobile={mobile}
+				/>
+				{data?.[keyname].map((item, index) => (
+					<FlexRow className={`!justify-start !items-start gap-1`}>
+						<DescriptionPara
+							text={`Round ${index+1} : `}
+							mobile={mobile}
+						/>
+						<DescriptionPara
+							text={item}
+							mobile={mobile}
+						/>
+					</FlexRow>
+				))}
+			</FlexCol>
+		</>
+	)
+}
+
 const JobList = ({ data, mobile, keyname, title }) => {
 	return (
 		<>
@@ -53,7 +77,9 @@ const JobList = ({ data, mobile, keyname, title }) => {
 				/>
 				<ol className='!list-decimal !pl-6'>
 					{data?.[keyname].map((item, index) => (
-						<li key={index} className='!my-1'>
+						<li
+							key={index}
+							className='!my-1'>
 							<DescriptionPara
 								text={item}
 								mobile={mobile}
@@ -109,9 +135,4 @@ const JobOpenings = ({ data, mobile, route }) => {
 	)
 }
 
-export {
-    JobTitle,
-    JobPara,
-    JobList,
-    JobOpenings,
-}
+export { JobTitle, JobPara, JobList, JobOpenings, JobProcedure }

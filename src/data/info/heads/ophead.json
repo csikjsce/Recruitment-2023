@@ -14,6 +14,10 @@
 		"They will receive a certificate of appreciation at the end of their tenure.",
 		"The Operations Head will gain valuable experience in event management and logistics. "
 	],
-	"procedure": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"procedure": [
+		"Review of Resumes",
+		"Interview Based",
+		"Faculty Interview Based"
+	],
 	"openings": [1, 1]
 }

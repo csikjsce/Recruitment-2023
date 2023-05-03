@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardContainer, FlexCol } from '../utilities/exports'
-import { JobList, JobPara, JobTitle, JobOpenings } from '../components/exports'
+import { JobList, JobPara, JobTitle, JobOpenings, JobProcedure } from '../components/exports'
 
 const JobDescription = ({ data, route, mobile }) => {
 	return (
@@ -22,14 +22,14 @@ const JobDescription = ({ data, route, mobile }) => {
 					/>
 					<JobList
 						data={data}
-						keyname='responsibilities'
-						title='Responsibilities'
+						keyname='skills'
+						title='Skills Required'
 						mobile={mobile}
 					/>
 					<JobList
 						data={data}
-						keyname='skills'
-						title='Skills Required'
+						keyname='responsibilities'
+						title='Responsibilities'
 						mobile={mobile}
 					/>
 					<JobList
@@ -38,7 +38,7 @@ const JobDescription = ({ data, route, mobile }) => {
 						title='Perks'
 						mobile={mobile}
 					/>
-					<JobList
+					<JobProcedure
 						data={data}
 						keyname='procedure'
 						title='Selection Procedure'
