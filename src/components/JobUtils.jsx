@@ -29,7 +29,7 @@ const JobTitle = ({ data, mobile }) => {
 const JobPara = ({ data, mobile, keyname, title }) => {
 	return (
 		<>
-			<FlexCol className='!items-start !gap-1'>
+			<FlexCol className='!items-start !gap-2'>
 				<DescriptionSubtitle
 					text={title}
 					mobile={mobile}
@@ -46,14 +46,14 @@ const JobPara = ({ data, mobile, keyname, title }) => {
 const JobList = ({ data, mobile, keyname, title }) => {
 	return (
 		<>
-			<FlexCol className='!items-start'>
+			<FlexCol className='!items-start !gap-2'>
 				<DescriptionSubtitle
 					text={title}
 					mobile={mobile}
 				/>
 				<ol className='!list-decimal !pl-6'>
 					{data?.[keyname].map((item, index) => (
-						<li key={index}>
+						<li key={index} className='!my-1'>
 							<DescriptionPara
 								text={item}
 								mobile={mobile}
@@ -70,7 +70,7 @@ const JobOpenings = ({ data, mobile, route }) => {
 	const gap = !mobile ? ['!gap-8', '!gap-3'] : ['!gap-6', '!gap-2']
 	return (
 		<>
-			<FlexCol className='!items-start'>
+			<FlexCol className='!items-start !gap-2'>
 				<DescriptionSubtitle
 					text='No. of Openings'
 					mobile={mobile}

@@ -137,7 +137,7 @@ const DescriptionSubtitle = ({ text, mobile }) => {
 
 const DescriptionPara = ({ text, mobile }) => {
 	const size = mobile ? 'text-[0.9rem]' : 'text-[1rem]'
-	const classes = `font-normal text-[#454545] text-justify leading-relaxed ${size}`
+	const classes = `font-normal text-[#454545] text-left leading-relaxed ${size}`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>

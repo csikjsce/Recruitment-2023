@@ -2,9 +2,18 @@
 	"title": "Operations Head",
 	"for": "TY Students",
 	"about": "The Operations Head is responsible for managing the logistics and operations of all council events and initiatives.",
-	"responsibilities": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"skills": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"perks": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"responsibilities": [
+		"They are responsible for coordinating with all teams to ensure that all initiatives are executed smoothly.",
+		"They will manage logistics such as venue booking, equipment procurement, and volunteer management."
+	],
+	"skills": [
+		"Excellent organizational and time-management skills are essential for this role.",
+		"The candidate should also possess strong communication and problem-solving abilities."
+	],
+	"perks": [
+		"They will receive a certificate of appreciation at the end of their tenure.",
+		"The Operations Head will gain valuable experience in event management and logistics. "
+	],
 	"procedure": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
 	"openings": [1, 1]
 }
