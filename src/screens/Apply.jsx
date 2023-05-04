@@ -23,12 +23,12 @@ const Apply = () => {
 
 	const location = useLocation()
 
-	const parent_route = location.state.key.split('-')[0]
-	const child_route = location.state.key.split('-')[1]
+	const parent_route = location.state.key?.split('-')[0]
+	const child_route = location.state.key?.split('-')[1]
 
 	useEffect(() => {
 		import(`../data/info/${parent_route}/${child_route}.json`).then((jsondata) => {
-			const data = jsondata.default
+			const data = jsondata?.default
 			setData(data)
 		})
 	}, [parent_route])
