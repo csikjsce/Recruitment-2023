@@ -1,25 +1,7 @@
 import React, { memo, useState, useEffect } from 'react'
 import { Container } from '../utilities/exports'
-import Lottie from 'react-lottie'
-import animationData from '../data/animations/animation.json'
-
-const Animation = memo(({ size }) => {
-	const defaultOptions = {
-		loop: true,
-		autoplay: true,
-		animationData: animationData,
-		rendererSettings: {
-			preserveAspectRatio: 'xMidYMid slice',
-		},
-	}
-	return (
-		<Lottie
-			options={defaultOptions}
-			height={size}
-			width={size}
-		/>
-	)
-})
+import { Animation } from '../components/exports'
+import animationData from '../data/animations/preloader.json'
 
 const Preloader = memo(() => {
 	const [showPreloader, setShowPreloader] = useState(true)
@@ -33,7 +15,7 @@ const Preloader = memo(() => {
 		zIndex: 1000,
 		opacity: showPreloader ? 1 : 0,
 		pointerEvents: showPreloader ? 'all' : 'none',
-        transition: 'opacity 1s ease-in-out',
+		transition: 'opacity 1s ease-in-out',
 	}
 
 	useEffect(() => {
@@ -59,7 +41,10 @@ const Preloader = memo(() => {
 				<Container
 					className='flex justify-center items-center bg-[#efffff]'
 					style={styles}>
-					<Animation size={300} />
+					<Animation
+						size={300}
+						animationData={animationData}
+					/>
 				</Container>
 			)}
 		</>

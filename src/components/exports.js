@@ -5,6 +5,7 @@ import FlexHeads from './HeadsCard'
 import FlexMembers from './MembersCard'
 import JobPostings from './JobPostings'
 import LandingNav from './LandingNav'
+import Animation from './Animation'
 import { JobList, JobPara, JobTitle, JobOpenings, JobProcedure } from './JobUtils'
 
 export {
@@ -20,4 +21,5 @@ export {
 	JobTitle,
 	JobOpenings,
 	JobProcedure,
+	Animation,
 }

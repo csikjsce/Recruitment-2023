@@ -6,7 +6,7 @@ import { Form, JobDescription, Completed, Closed } from '../main/exports'
 const Apply = () => {
 	const [isMobile, setIsMobile] = useState(null)
 	const [data, setData] = useState(null)
-	const state = 'completed'
+	const state = 'open'
 
 	useEffect(() => {
 		const handleResize = () => {

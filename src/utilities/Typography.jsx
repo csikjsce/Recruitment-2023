@@ -115,9 +115,9 @@ const NavbarSubtitle = ({ text }) => {
 	)
 }
 
-const DescriptionTitle = ({ text, mobile }) => {
+const DescriptionTitle = ({ text, mobile, className }) => {
 	const size = mobile ? 'text-[1.35rem]' : 'text-[1.4rem]'
-	const classes = `font-semibold text-[#303030] leading-relaxed ${size}`
+	const classes = `${className} font-semibold text-[#303030] leading-relaxed ${size}`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>
