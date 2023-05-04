@@ -9,13 +9,13 @@ const Navbar = ({ mobile }) => {
 			<FlexRow className={classes}>
 				<FlexRow className='!items-start !justify-start !w-auto !gap-3'>
 					<img
-                        src={require('../assets/csi-logo.png')}
+						src={require('../assets/csi-logo.png')}
 						alt=''
 						className='w-[auto] h-[30px]'
 					/>
-					<NavbarTitle text='CSI-KJSCE' />
+					<NavbarTitle text='CSI-KJSCE Recruitment 23-24' />
 				</FlexRow>
-				<NavbarSubtitle text='CSI Recruitment 23-24 | Join Now' />
+				<NavbarSubtitle text='Last Date to Apply 24th May' />
 			</FlexRow>
 		</>
 	)

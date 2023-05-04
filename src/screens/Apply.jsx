@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Flex, FlexCol, ScreenTitle } from '../utilities/exports'
 import { useLocation } from 'react-router-dom'
-import { Form, JobDescription } from '../main/exports'
+import { Form, JobDescription, Completed, Closed } from '../main/exports'
 
 const Apply = () => {
 	const [isMobile, setIsMobile] = useState(null)
 	const [data, setData] = useState(null)
+	const state = 'completed'
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -36,7 +37,21 @@ const Apply = () => {
 		window.scrollTo(0, 0)
 	}, [])
 
-	const padding = isMobile ? "" : "!px-20 !py-16"
+	const padding = isMobile ? '' : '!px-20 !py-16'
+
+	let stateContent = null
+
+	switch (state) {
+		case 'open':
+			stateContent = <Form mobile={isMobile} />
+			break
+		case 'closed':
+			stateContent = <Closed mobile={isMobile} />
+			break
+		case 'completed':
+			stateContent = <Completed mobile={isMobile} />
+			break
+	}
 
 	return (
 		<Container
@@ -56,7 +71,7 @@ const Apply = () => {
 						route={parent_route}
 						mobile={isMobile}
 					/>
-					<Form mobile={isMobile} />
+					{stateContent}
 				</Flex>
 			</FlexCol>
 		</Container>
