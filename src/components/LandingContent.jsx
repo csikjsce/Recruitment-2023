@@ -30,10 +30,15 @@ const LandingText = ({onClick}) => {
 						mobile={isMobile}
 					/>
 				</FlexCol>
-				<FlexCol className='!items-start'>
+				<FlexCol className='!items-start !gap-6'>
 					<LandingPara
 						mobile={isMobile}
 						text='Step into the world of technology and embark on a journey of growth and learning, with a team that is passionate about pushing boundaries and making a difference. '
+					/>
+					<LandingPara
+						mobile={isMobile}
+						text="Last date to apply: "
+						bold="24th May, 11:59 PM IST"
 					/>
 				</FlexCol>
 				<FlexCol className={`!items-start ${isMobile ? "!mt-6" : "!mt-10"}`}>

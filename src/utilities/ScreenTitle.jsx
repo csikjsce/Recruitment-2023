@@ -10,7 +10,7 @@ const BackIcon = () => {
 			className='cursor-pointer'
 			style={{
 				width: '22px',
-				height: '24px',
+				height: '22px',
 			}}
 			onClick={() => {
 				window.history.back()
@@ -19,13 +19,14 @@ const BackIcon = () => {
 	)
 }
 
-const ScreenTitle = ({ title, className }) => {
+const ScreenTitle = ({ title, className, mobile }) => {
 	const classes = ' !justify-start w-screen gap-4 ' + className
 	return (
 		<FlexRow className={classes}>
-			<BackIcon />
+			<BackIcon mobile={mobile} />
 			<ScreenText
 				text={title}
+				mobile={mobile}
 			/>
 		</FlexRow>
 	)

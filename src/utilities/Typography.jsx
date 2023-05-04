@@ -20,12 +20,12 @@ const LandingSubtitle = ({ text, mobile }) => {
 	)
 }
 
-const LandingPara = ({ text, mobile }) => {
+const LandingPara = ({ text, mobile, bold }) => {
 	const size = mobile ? 'text-[0.9rem]' : 'text-[1.2rem]'
 	const classes = `font-normal text-[#2D2D2D] leading-relaxed ${size}`
 	return (
 		<>
-			<h1 className={classes}>{text}</h1>
+			<h1 className={classes}>{text}<span className='font-medium'>{bold}</span></h1>
 		</>
 	)
 }
@@ -88,8 +88,9 @@ const PositionSubtitleMobile = ({ text, subtext }) => {
 	)
 }
 
-const ScreenText = ({ text }) => {
-	const classes = `font-semibold text-[#2D2D2D] leading-relaxed text-[1.7rem]`
+const ScreenText = ({ text, mobile }) => {
+	const size = mobile ? 'text-[1.4rem]' : 'text-[1.5rem]'
+	const classes = `font-semibold text-[#2D2D2D] leading-relaxed ${size}`
 	return (
 		<>
 			<h1 className={classes}>{text}</h1>
