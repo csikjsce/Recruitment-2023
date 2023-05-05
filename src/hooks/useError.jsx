@@ -62,7 +62,7 @@ const useError = () => {
 				}
 				break;
 			case 'linkedin':
-				if (!value.match(/^https?:\/\/(www\.)?linkedin\.com\/in\/.+$/)) {
+				if (!value.match(/linkedin\.com\/in\//)) {
 					setTrue('linkedin', 'Invalid LinkedIn profile link');
 				} else {
 					setFalse('linkedin');

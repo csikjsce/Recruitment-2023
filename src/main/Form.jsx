@@ -73,7 +73,8 @@ const Form = ({ mobile, onState }) => {
 						<TextInput
 							key={index}
 							label={item?.label}
-							rows = {item?.key !== "resume" ? 4 : null}
+							rows={item?.key !== 'resume' ? 4 : null}
+							placeholder={item?.key !== 'resume' ? item?.label : null}
 							onData={(value) => {
 								updateData(item?.key, value);
 							}}
