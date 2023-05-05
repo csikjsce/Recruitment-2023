@@ -13,7 +13,8 @@ const Form = ({ mobile, onState }) => {
 		let values = Object.values(error);
 		console.log(values);
 		let flag = values.every((item) => item === false);
-		setDisabled(flag);
+		console.log(flag);
+		setDisabled(!flag);
 	}, [data]);
 
 	const handleSubmit = (event) => {
