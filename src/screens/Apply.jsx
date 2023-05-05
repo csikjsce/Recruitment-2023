@@ -37,8 +37,6 @@ const Apply = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const padding = isMobile ? '' : '!px-20 !py-16';
-
 	let stateContent = null;
 
 	switch (state) {
@@ -57,7 +55,7 @@ const Apply = () => {
 		<Container
 			mobile={isMobile}
 			py={true}
-			className={`${padding} ${isMobile ? '!px-6' : ''}`}
+			className={`${isMobile ? '' : '!px-20 !py-16'} ${isMobile ? '!px-6' : ''}`}
 		>
 			<FlexCol className='!items-start !gap-12 !w-full'>
 				<ScreenTitle

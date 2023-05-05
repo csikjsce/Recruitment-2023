@@ -1,32 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, Button } from '../utilities/exports';
 import formdata from '../data/form/form.json';
+import { useData, useError } from '../hooks/exports';
 
 const Form = ({ mobile, onState }) => {
-	const initialData = {
-		username: '',
-		email: '',
-		roll: '',
-		phone: '',
-		linkedin: '',
-		branch: '',
-		year: '',
-		preference1: '',
-		preference2: '',
-		preference3: '',
-		resume: '',
-		q1: '',
-		q2: '',
-	};
+	const { data, setData, initialData, updateData, preferences } = useData();
+	const { error, setError, validate } = useError();
 
-	const [data, setData] = useState(initialData);
 	const [disabled, setDisabled] = useState(true);
 
-	const updateData = (key, value) => {
-		setData((prev) => {
-			return { ...prev, [key]: value };
-		});
-	};
+	useEffect(() => {
+		let values = Object.values(error);
+		console.log(values);
+		let flag = values.every((item) => item === false);
+		setDisabled(flag);
+	}, [data]);
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -51,6 +39,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('username', value);
 						}}
+						onBlur={(value) => {
+							validate('username', value);
+						}}
+						error={typeof error.username === 'string' ? true : false}
+						helpertext={error.username}
 						display={data?.username}
 					/>
 					<TextInput
@@ -58,6 +51,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('email', value);
 						}}
+						onBlur={(value) => {
+							validate('email', value);
+						}}
+						error={typeof error.email === 'string' ? true : false}
+						helpertext={error.email}
 						display={data?.email}
 					/>
 					<TextInput
@@ -65,6 +63,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('roll', value);
 						}}
+						onBlur={(value) => {
+							validate('roll', value);
+						}}
+						error={typeof error.roll === 'string' ? true : false}
+						helpertext={error.roll}
 						display={data?.roll}
 					/>
 					<TextInput
@@ -72,6 +75,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('phone', value);
 						}}
+						onBlur={(value) => {
+							validate('phone', value);
+						}}
+						error={typeof error.phone === 'string' ? true : false}
+						helpertext={error.phone}
 						display={data?.phone}
 					/>
 					<TextInput
@@ -79,6 +87,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('linkedin', value);
 						}}
+						onBlur={(value) => {
+							validate('linkedin', value);
+						}}
+						error={typeof error.linkedin === 'string' ? true : false}
+						helpertext={error.linkedin}
 						display={data?.linkedin}
 					/>
 					<SelectInput
@@ -102,7 +115,7 @@ const Form = ({ mobile, onState }) => {
 					<SelectInput
 						label='Preference 1'
 						on={data.year != '' ? true : false}
-						menu={formdata?.preference[data?.year || 2026]}
+						menu={preferences}
 						onData={(value) => {
 							updateData('preference1', value);
 						}}
@@ -111,7 +124,7 @@ const Form = ({ mobile, onState }) => {
 					<SelectInput
 						label='Preference 2'
 						on={data.year != '' ? true : false}
-						menu={formdata?.preference[data?.year || 2026]}
+						menu={preferences}
 						onData={(value) => {
 							updateData('preference2', value);
 						}}
@@ -120,7 +133,7 @@ const Form = ({ mobile, onState }) => {
 					<SelectInput
 						label='Preference 3'
 						on={data.year != '' ? true : false}
-						menu={formdata?.preference[data?.year || 2026]}
+						menu={preferences}
 						onData={(value) => {
 							updateData('preference3', value);
 						}}
@@ -131,6 +144,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('resume', value);
 						}}
+						onBlur={(value) => {
+							validate('resume', value);
+						}}
+						error={typeof error.resume === 'string' ? true : false}
+						helpertext={error.resume}
 						display={data?.resume}
 					/>
 					<TextInput
@@ -140,6 +158,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('q1', value);
 						}}
+						onBlur={(value) => {
+							validate('q1', value);
+						}}
+						error={typeof error.q1 === 'string' ? true : false}
+						helpertext={error.q1}
 						display={data?.q1}
 					/>
 					<TextInput
@@ -149,6 +172,11 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('q2', value);
 						}}
+						onBlur={(value) => {
+							validate('q2', value);
+						}}
+						error={typeof error.q2 === 'string' ? true : false}
+						helpertext={error.q2}
 						display={data?.q2}
 					/>
 					<Button
