@@ -11,9 +11,7 @@ const Form = ({ mobile, onState }) => {
 
 	useEffect(() => {
 		let values = Object.values(error);
-		console.log(values);
 		let flag = values.every((item) => item === false);
-		console.log(flag);
 		setDisabled(!flag);
 	}, [data]);
 
