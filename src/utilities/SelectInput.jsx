@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const SelectInput = ({ label, menu, onData, display ='' }) => {
+const SelectInput = ({ label, menu, onData, on, display = '' }) => {
 	const [value, setValue] = useState(display || '');
 
 	useEffect(() => {
@@ -25,14 +25,18 @@ const SelectInput = ({ label, menu, onData, display ='' }) => {
 					onChange={handleChange}
 					required
 				>
-					{menu.map((item, index) => (
-						<MenuItem
-							key={index}
-							value={item}
-						>
-							{item}
-						</MenuItem>
-					))}
+					{on ? (
+						menu.map((item, index) => (
+							<MenuItem
+								key={index}
+								value={item}
+							>
+								{item}
+							</MenuItem>
+						))
+					) : (
+						<MenuItem value={''}>"Select Graduation Year First"</MenuItem>
+					)}
 				</Select>
 			</FormControl>
 		</>
