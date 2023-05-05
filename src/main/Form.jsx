@@ -74,7 +74,7 @@ const Form = ({ mobile, onState }) => {
 							key={index}
 							label={item?.label}
 							rows={item?.key !== 'resume' ? 4 : null}
-							placeholder={item?.key !== 'resume' ? item?.label : null}
+							placeholder={item?.key !== 'resume' ? item?.label : "Google Drive or Google Docs link"}
 							onData={(value) => {
 								updateData(item?.key, value);
 							}}

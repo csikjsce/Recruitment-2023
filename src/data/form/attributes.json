@@ -50,7 +50,7 @@
 	],
 	"textfields2": [
 		{
-			"label": "Resume Drive Link",
+			"label": "Resume Link",
 			"key": "resume"
 		},
 		{

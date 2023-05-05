@@ -92,7 +92,7 @@ const useError = () => {
 				}
 				break;
 			case 'resume':
-				if (!value.startsWith('https://drive.google.com/file/')) {
+				if (!value.match(/(drive\.google\.com\/file\/|docs\.google\.com\/document\/)/)) {
 					setTrue('resume', 'Invalid Google Drive file link');
 				} else {
 					setFalse('resume');
