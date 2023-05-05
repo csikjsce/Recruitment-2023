@@ -51,9 +51,11 @@ const JobProcedure = ({ data, mobile, keyname, title }) => {
 					mobile={mobile}
 				/>
 				{data?.[keyname].map((item, index) => (
-					<FlexRow className={`!justify-start !items-start gap-1`}>
+					<FlexRow
+						key={index}
+						className={`!justify-start !items-start gap-1`}>
 						<DescriptionPara
-							text={`Round ${index+1} : `}
+							text={`Round ${index + 1} : `}
 							mobile={mobile}
 						/>
 						<DescriptionPara

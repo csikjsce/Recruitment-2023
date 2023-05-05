@@ -1,13 +1,11 @@
 import React from 'react'
 import { TextField } from '@mui/material'
 
-const TextInput = ({ label, rows, placeholder }) => {
+const TextInput = ({ label, rows, placeholder, onData }) => {
 	const multiline = rows ? true : false
 
-	const [value, setValue] = React.useState('')
-
 	const handleChange = (event) => {
-		setValue(event.target.value)
+		onData(event.target.value)
     }
     
 	return (
@@ -18,7 +16,6 @@ const TextInput = ({ label, rows, placeholder }) => {
 				variant='outlined'
 				multiline={multiline}
                 rows={rows}
-                value={value}
                 onChange={handleChange}
 				required
 				fullWidth
