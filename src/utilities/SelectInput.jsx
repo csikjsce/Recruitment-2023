@@ -24,7 +24,6 @@ const SelectInput = ({ label, menu, onData, on, display = '', onBlur  }) => {
 					label={label}
 					value={value}
 					onChange={handleChange}
-					required
 				>
 					{on ? (
 						menu.map((item, index) => (

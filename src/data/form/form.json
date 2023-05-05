@@ -1,33 +1,8 @@
 {
-    "branch": [
-        "COMPS",
-        "IT",
-        "EXCP",
-        "EXTC",
-        "ETRX",
-        "MECH"
-    ],
-    "year": [
-        "2025",
-        "2026"
-    ],
-    "preference": {
-        "2025" : [
-					"General Secretary",
-					"Jt General Secretary",
-					"Financial Secretary",
-					"Technical Head",
-                    "Jt Technical Head",
-					"Creative Head",
-					"Jt Creative Head",
-					"Operations Head",
-					"Jt Operations Head"
-				],
-        "2026" : [
-            "Finance Team",
-            "Technical Team",
-            "Creative Team",
-            "Operations Team"
-        ]
-    }
+	"branch": ["COMPS", "IT", "EXCP", "EXTC", "ETRX", "MECH"],
+	"year": ["2025", "2026"],
+	"preference": {
+		"2025": ["General Secretary", "Jt General Secretary", "Financial Secretary", "Technical Head", "Jt Technical Head", "Creative Head", "Jt Creative Head", "Operations Head", "Jt Operations Head"],
+		"2026": ["Finance Team", "Technical Team", "Creative Team", "Operations Team"]
+	}
 }

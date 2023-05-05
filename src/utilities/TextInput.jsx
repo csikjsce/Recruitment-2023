@@ -28,7 +28,6 @@ const TextInput = ({ label, rows, placeholder, onData, onBlur, display='', error
 				onChange={handleChange}
 				error={error}
 				helperText={helpertext}
-				required
 				fullWidth
 			/>
 		</>

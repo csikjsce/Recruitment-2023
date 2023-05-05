@@ -54,11 +54,11 @@
 			"key": "resume"
 		},
 		{
-			"label": "Why do you want to be a part of the CSI-KJSCE?",
+			"label": "What excites you the most to join CSI-KJSCE?",
 			"key": "q1"
 		},
 		{
-			"label": "What makes you a strong candidate for the CSI-KJSCE?",
+			"label": "Describe a time when you demonstrated leadership to solve a real-world problem",
 			"key": "q2"
 		}
 	]
