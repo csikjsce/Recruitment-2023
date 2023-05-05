@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, UploadInput, Button } from '../utilities/exports';
 import formdata from '../data/form/form.json';
 
@@ -85,7 +85,6 @@ const Form = ({ mobile }) => {
 					<Button
 						text='Submit Application'
 						className='!px-6 !mt-10'
-						type='submit'
 						onClick={handleSubmit}
 						mobile={true}
 					/>

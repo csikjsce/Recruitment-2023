@@ -1,13 +1,13 @@
-import React from 'react'
-import { TextField } from '@mui/material'
+import React from 'react';
+import { TextField } from '@mui/material';
 
 const TextInput = ({ label, rows, placeholder, onData }) => {
-	const multiline = rows ? true : false
+	const multiline = rows ? true : false;
 
 	const handleChange = (event) => {
-		onData(event.target.value)
-    }
-    
+		onData(event.target.value);
+	};
+
 	return (
 		<>
 			<TextField
@@ -15,13 +15,13 @@ const TextInput = ({ label, rows, placeholder, onData }) => {
 				placeholder={placeholder}
 				variant='outlined'
 				multiline={multiline}
-                rows={rows}
-                onChange={handleChange}
+				rows={rows}
+				onChange={handleChange}
 				required
 				fullWidth
 			/>
 		</>
-	)
-}
+	);
+};
 
-export default TextInput
+export default TextInput;
