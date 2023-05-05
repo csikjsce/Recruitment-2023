@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, Button } from '../utilities/exports';
 import formdata from '../data/form/form.json';
 
-const Form = ({ mobile }) => {
+const Form = ({ mobile, onState }) => {
 	const initialData = {
 		username: '',
 		email: '',
@@ -20,6 +20,7 @@ const Form = ({ mobile }) => {
 	};
 
 	const [data, setData] = useState(initialData);
+	const [disabled, setDisabled] = useState(true);
 
 	const updateData = (key, value) => {
 		setData((prev) => {
@@ -29,8 +30,8 @@ const Form = ({ mobile }) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(data);
 		setData(initialData);
+		onState('completed');
 	};
 
 	return (
@@ -154,6 +155,7 @@ const Form = ({ mobile }) => {
 						text='Submit Application'
 						className='!px-6 !mt-10'
 						onClick={handleSubmit}
+						disabled={disabled}
 						mobile={true}
 					/>
 				</FlexCol>

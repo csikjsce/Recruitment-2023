@@ -1,63 +1,64 @@
-import React, { useState, useEffect } from 'react'
-import { Container, Flex, FlexCol, ScreenTitle } from '../utilities/exports'
-import { useLocation } from 'react-router-dom'
-import { Form, JobDescription, Completed, Closed } from '../main/exports'
+import React, { useState, useEffect } from 'react';
+import { Container, Flex, FlexCol, ScreenTitle } from '../utilities/exports';
+import { useLocation } from 'react-router-dom';
+import { Form, JobDescription, Completed, Closed } from '../main/exports';
 
 const Apply = () => {
-	const [isMobile, setIsMobile] = useState(null)
-	const [data, setData] = useState(null)
-	const state = 'open'
+	const [isMobile, setIsMobile] = useState(null);
+	const [data, setData] = useState(null);
+	const [state, setState] = useState('open');
 
 	useEffect(() => {
 		const handleResize = () => {
 			if (window.innerWidth > 500) {
-				setIsMobile(false)
+				setIsMobile(false);
 			} else {
-				setIsMobile(true)
+				setIsMobile(true);
 			}
-		}
-		handleResize()
-		window.addEventListener('resize', handleResize)
-		return () => window.removeEventListener('resize', handleResize)
-	}, [])
+		};
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
-	const location = useLocation()
+	const location = useLocation();
 
-	const parent_route = location.state.key?.split('-')[0]
-	const child_route = location.state.key?.split('-')[1]
+	const parent_route = location.state.key?.split('-')[0];
+	const child_route = location.state.key?.split('-')[1];
 
 	useEffect(() => {
 		import(`../data/info/${parent_route}/${child_route}.json`).then((jsondata) => {
-			const data = jsondata?.default
-			setData(data)
-		})
-	}, [parent_route])
+			const data = jsondata?.default;
+			setData(data);
+		});
+	}, [parent_route]);
 
 	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
+		window.scrollTo(0, 0);
+	}, []);
 
-	const padding = isMobile ? '' : '!px-20 !py-16'
+	const padding = isMobile ? '' : '!px-20 !py-16';
 
-	let stateContent = null
+	let stateContent = null;
 
 	switch (state) {
 		case 'open':
-			stateContent = <Form mobile={isMobile} />
-			break
+			stateContent = <Form mobile={isMobile} onState={(value)=>{setState(value)}} />;
+			break;
 		case 'closed':
-			stateContent = <Closed mobile={isMobile} />
-			break
+			stateContent = <Closed mobile={isMobile} />;
+			break;
 		case 'completed':
-			stateContent = <Completed mobile={isMobile} />
-			break
+			stateContent = <Completed mobile={isMobile} />;
+			break;
 	}
 
 	return (
 		<Container
 			mobile={isMobile}
 			py={true}
-			className={`${padding} ${isMobile ? '!px-6' : ''}`}>
+			className={`${padding} ${isMobile ? '!px-6' : ''}`}
+		>
 			<FlexCol className='!items-start !gap-12 !w-full'>
 				<ScreenTitle
 					title={data?.title}
@@ -65,7 +66,8 @@ const Apply = () => {
 				/>
 				<Flex
 					className='!justify-between !items-start !gap-4 !w-full'
-					direction={isMobile ? 'col' : 'row'}>
+					direction={isMobile ? 'col' : 'row'}
+				>
 					<JobDescription
 						data={data}
 						route={parent_route}
@@ -75,7 +77,7 @@ const Apply = () => {
 				</Flex>
 			</FlexCol>
 		</Container>
-	)
-}
+	);
+};
 
-export default Apply
+export default Apply;
