@@ -5,7 +5,6 @@ import ScreenTitle from './ScreenTitle'
 import { Flex, FlexRow, FlexCol } from './Flex'
 import TextInput from './TextInput'
 import SelectInput from './SelectInput'
-import UploadInput from './UploadInput'
 import {
 	LandingTitle,
 	LandingSubtitle,
@@ -54,5 +53,4 @@ export {
 	DescriptionPara,
 	TextInput,
 	SelectInput,
-	UploadInput,
 }

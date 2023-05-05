@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, UploadInput, Button } from '../utilities/exports';
+import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, Button } from '../utilities/exports';
 import formdata from '../data/form/form.json';
 
 const Form = ({ mobile }) => {
@@ -79,6 +79,7 @@ const Form = ({ mobile }) => {
 						label='Preference 3'
 						menu={formdata?.preference[2025]}
 					/>
+					<TextInput label='Resume Drive Link' />
 					<TextInput
 						label='Why do you want to be a part of the CSI-KJSCE?'
 						placeholder={mobile ? 'Why do you want to be a part of the CSI-KJSCE?' : null}
@@ -89,7 +90,6 @@ const Form = ({ mobile }) => {
 						placeholder={mobile ? 'What makes you a strong candidate for the CSI-KJSCE?' : null}
 						rows='4'
 					/>
-					<UploadInput />
 					<Button
 						text='Submit Application'
 						className='!px-6 !mt-10'
