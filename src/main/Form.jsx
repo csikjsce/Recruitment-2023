@@ -3,7 +3,7 @@ import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, Uploa
 import formdata from '../data/form/form.json';
 
 const Form = ({ mobile }) => {
-	const [data, setData] = useState({
+	const initialData = {
 		username: '',
 		email: '',
 		roll: '',
@@ -16,7 +16,9 @@ const Form = ({ mobile }) => {
 		preference3: '',
 		q1: '',
 		q2: '',
-	});
+	};
+
+	const [data, setData] = useState(initialData);
 
 	const updateData = (key, value) => {
 		setData((prev) => {
@@ -27,6 +29,7 @@ const Form = ({ mobile }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log(data);
+		setData(initialData);
 	};
 
 	return (
@@ -46,6 +49,7 @@ const Form = ({ mobile }) => {
 						onData={(value) => {
 							updateData('username', value);
 						}}
+						display={data?.username}
 					/>
 					<TextInput label='Somaiya Email' />
 					<TextInput label='Roll Number' />
@@ -54,6 +58,10 @@ const Form = ({ mobile }) => {
 					<SelectInput
 						label='Branch'
 						menu={formdata?.branch}
+						onData={(value) => {
+							updateData('branch', value);
+						}}
+						display={data?.branch}
 					/>
 					<SelectInput
 						label='Graduation Year'

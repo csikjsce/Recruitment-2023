@@ -1,12 +1,17 @@
-import React from 'react'
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
+import React, { useEffect, useState } from 'react';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const SelectInput = ({ label, menu }) => {
-	const [value, setValue] = React.useState('')
+const SelectInput = ({ label, menu, onData, display ='' }) => {
+	const [value, setValue] = useState(display || '');
+
+	useEffect(() => {
+		setValue(display);
+	}, [display]);
 
 	const handleChange = (event) => {
-		setValue(event.target.value)
-	}
+		setValue(event.target.value);
+		onData(event.target.value);
+	};
 
 	return (
 		<>
@@ -18,18 +23,20 @@ const SelectInput = ({ label, menu }) => {
 					label={label}
 					value={value}
 					onChange={handleChange}
-					required>
+					required
+				>
 					{menu.map((item, index) => (
 						<MenuItem
 							key={index}
-							value={item}>
+							value={item}
+						>
 							{item}
 						</MenuItem>
 					))}
 				</Select>
 			</FormControl>
 		</>
-	)
-}
+	);
+};
 
-export default SelectInput
+export default SelectInput;
