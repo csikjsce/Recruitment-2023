@@ -33,15 +33,27 @@ const Apply = () => {
 		});
 	}, [parent_route]);
 
+	let stateContent = null;
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
+	}, [data, state]);
+
+	useEffect(() => {
+		const storageValue = localStorage.getItem("state");
+		if (storageValue === 'completed') {
+			setState('completed');
+		}
 	}, []);
 
-	let stateContent = null;
+	const handleFormSubmit = () => {
+		localStorage.setItem("state", 'completed');
+		setState('completed');
+	};
 
 	switch (state) {
 		case 'open':
-			stateContent = <Form mobile={isMobile} onState={(value)=>{setState(value)}} />;
+			stateContent = <Form mobile={isMobile} onState={()=>{handleFormSubmit()}} />;
 			break;
 		case 'closed':
 			stateContent = <Closed mobile={isMobile} />;

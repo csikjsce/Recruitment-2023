@@ -18,10 +18,11 @@ const Form = ({ mobile, onState }) => {
 		let values = Object.values(error);
 		let flag = values.every((item) => item === false);
 		setDisabled(!flag);
-	}, [data]);
+	}, [data]);  
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		console.log(data);
 		setData(initialData);
 		onState('completed');
 	};
