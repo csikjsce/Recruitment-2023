@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const SelectInput = ({ label, menu, onData, on, display = '' }) => {
+const SelectInput = ({ label, menu, onData, on, display = '', onBlur  }) => {
 	const [value, setValue] = useState(display || '');
 
 	useEffect(() => {
@@ -11,6 +11,7 @@ const SelectInput = ({ label, menu, onData, on, display = '' }) => {
 	const handleChange = (event) => {
 		setValue(event.target.value);
 		onData(event.target.value);
+		onBlur(event.target.value);
 	};
 
 	return (

@@ -102,6 +102,9 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('branch', value);
 						}}
+						onBlur={(value) => {
+							validate('branch', value);
+						}}
 						display={data?.branch}
 					/>
 					<SelectInput
@@ -110,6 +113,9 @@ const Form = ({ mobile, onState }) => {
 						menu={formdata?.year}
 						onData={(value) => {
 							updateData('year', value);
+						}}
+						onBlur={(value) => {
+							validate('year', value);
 						}}
 						display={data?.year}
 					/>
@@ -120,6 +126,9 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('preference1', value);
 						}}
+						onBlur={(value) => {
+							validate('preference1', value);
+						}}
 						display={data?.preference1}
 					/>
 					<SelectInput
@@ -129,6 +138,9 @@ const Form = ({ mobile, onState }) => {
 						onData={(value) => {
 							updateData('preference2', value);
 						}}
+						onBlur={(value) => {
+							validate('preference2', value);
+						}}
 						display={data?.preference2}
 					/>
 					<SelectInput
@@ -137,6 +149,9 @@ const Form = ({ mobile, onState }) => {
 						menu={preferences}
 						onData={(value) => {
 							updateData('preference3', value);
+						}}
+						onBlur={(value) => {
+							validate('preference3', value);
 						}}
 						display={data?.preference3}
 					/>
