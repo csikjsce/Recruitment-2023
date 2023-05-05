@@ -87,8 +87,8 @@ const Form = ({ mobile, onState }) => {
 						/>
 					))}
 					<Button
-						text='Submit Application'
-						className='!px-6 !mt-10'
+						text='Apply'
+						className='!px-10 !mt-10'
 						onClick={handleSubmit}
 						disabled={disabled}
 						mobile={true}
