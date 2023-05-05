@@ -34,7 +34,7 @@ const useError = () => {
 	const validate = (key, value) => {
 		switch (key) {
 			case 'username':
-				if (value.length < 1) {
+				if (value.length < 2) {
 					setTrue('username', 'Name must not be empty');
 				} else {
 					setFalse('username');

@@ -1,0 +1,65 @@
+{
+	"textfields1": [
+		{
+			"label": "Full Name",
+			"key": "username"
+		},
+		{
+			"label": "Somaiya Email",
+			"key": "email"
+		},
+		{
+			"label": "Roll Number",
+			"key": "roll"
+		},
+		{
+			"label": "Phone Number",
+			"key": "phone"
+		},
+		{
+			"label": "LinkedIn Profile",
+			"key": "linkedin"
+		}
+	],
+	"selectfields": [
+		{
+			"label": "Branch",
+			"key": "branch",
+			"menu": "branch"
+		},
+		{
+			"label": "Graduation Year",
+			"key": "year",
+			"menu": "year"
+		},
+		{
+			"label": "Preference 1",
+			"key": "preference1",
+			"menu": "preferences"
+		},
+		{
+			"label": "Preference 2",
+			"key": "preference2",
+			"menu": "preferences"
+		},
+		{
+			"label": "Preference 3",
+			"key": "preference3",
+			"menu": "preferences"
+		}
+	],
+	"textfields2": [
+		{
+			"label": "Resume Drive Link",
+			"key": "resume"
+		},
+		{
+			"label": "Why do you want to be a part of the CSI-KJSCE?",
+			"key": "q1"
+		},
+		{
+			"label": "What makes you a strong candidate for the CSI-KJSCE?",
+			"key": "q2"
+		}
+	]
+}
