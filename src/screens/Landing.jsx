@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { LandingContent, LandingAsset, JobPostings, LandingNav } from '../components/exports';
+import { LandingContent, LandingAsset, JobPostings, LandingNav, Footer } from '../components/exports';
 import { Container, Flex } from '../utilities/exports';
 import { Preloader } from './exports';
 
@@ -47,6 +47,7 @@ const Landing = () => {
 					ref={contentRef}
 					isMobile={isMobile}
 				/>
+				<Footer mobile={isMobile} />
 			</Container>
 		</>
 	);

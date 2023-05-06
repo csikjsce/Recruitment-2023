@@ -75,12 +75,12 @@ const PositionSubtitle = ({ text }) => {
 	)
 }
 
-const PositionSubtitleMobile = ({ text, subtext }) => {
+const PositionSubtitleMobile = ({ text, subtext, className }) => {
 	const classes_text = `font-medium text-[#1E293B] leading-relaxed text-[1.45rem]`
 	const classes_subtext = `font-normal text-[#1E293B] leading-relaxed text-[0.9rem]`
 	return (
 		<>
-			<FlexCol className='!items-start !justify-center'>
+			<FlexCol className={'!items-start !justify-center '+className}>
 				<h1 className={classes_text}>{text}</h1>
 				<h1 className={classes_subtext}>{subtext}</h1>
 			</FlexCol>
