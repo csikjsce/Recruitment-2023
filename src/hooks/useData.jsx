@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import formdata from '../data/form/form.json';
 
 const useForm = () => {
@@ -25,6 +25,18 @@ const useForm = () => {
 			return { ...prev, [key]: value };
 		});
 	};
+
+	useEffect(() => {
+		if (localStorage.getItem('data')) {
+			const keys = Object.keys(JSON.parse(localStorage.getItem('data')));
+			const values = Object.values(JSON.parse(localStorage.getItem('data')));
+			for (let i = 0; i < keys.length; i++) {
+				updateData(keys[i], values[i]);
+			}
+		}
+	}, []);
+
+	console.log(data);
 
 	const preferences = formdata?.preference[data?.year || 2026] || [];
 

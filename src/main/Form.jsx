@@ -33,6 +33,12 @@ const Form = ({ mobile, onState }) => {
 		setDisabled(!flag);
 	}, [data]);
 
+	useEffect(() => {
+		if (!Object.values(data).every((item) => item === '')) {
+			localStorage.setItem('data', JSON.stringify(data));
+		}
+	}, [data]);
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		setLoading(true);
