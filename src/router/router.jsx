@@ -1,25 +1,23 @@
-import React from 'react';
-import { Landing, Apply, Preloader } from '../screens/exports';
+import React from "react";
+import { Landing, Apply } from "../screens/exports";
 
 const routes = [
-	{
-		path: '/',
-		element: (
-			<>
-				<Preloader />
-				<Landing />
-			</>
-		),
-	},
-	{
-		path: '/apply',
-		element: (
-			<>
-				<Preloader />
-				<Apply />
-			</>
-		),
-	},
-]
+  {
+    path: "/",
+    element: (
+      <>
+        <Landing />
+      </>
+    ),
+  },
+  {
+    path: "/apply",
+    element: (
+      <>
+        <Apply />
+      </>
+    ),
+  },
+];
 
 export default routes;
