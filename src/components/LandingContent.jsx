@@ -19,7 +19,7 @@ const LandingText = ({onClick}) => {
 
 	return (
 		<>
-			<FlexCol className={`!items-start !gap-12 ${isMobile ? '!w-full' : '!w-1/2'}`}>
+			<FlexCol className={`!items-start !gap-10 ${isMobile ? '!w-full' : '!w-1/2'}`}>
 				<FlexCol className='!items-start'>
 					<LandingTitle
 						text='Empower'
@@ -41,7 +41,7 @@ const LandingText = ({onClick}) => {
 						bold="24th May, 11:59 PM IST"
 					/>
 				</FlexCol>
-				<FlexCol className={`!items-start ${isMobile ? "!mt-6" : "!mt-10"}`}>
+				<FlexCol className={`!items-start ${isMobile ? "!mt-2" : "!mt-8"}`}>
 					<Button
 						text='Get Started'
 						mobile={isMobile}
