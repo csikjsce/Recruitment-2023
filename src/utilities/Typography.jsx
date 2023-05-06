@@ -101,7 +101,7 @@ const ScreenText = ({ text, mobile }) => {
 const NavbarTitle = ({ text }) => {
 	return (
 		<>
-			<h1 className='font-semibold text-[#2D2D2D] leading-relaxed tracking-wide text-[1.3rem]'>
+			<h1 className='font-semibold text-[#2D2D2D] leading-relaxed tracking-wide text-[1.2rem]'>
 				{text}
 			</h1>
 		</>
@@ -111,7 +111,7 @@ const NavbarTitle = ({ text }) => {
 const NavbarSubtitle = ({ text }) => {
 	return (
 		<>
-			<h1 className='font-normal text-[#2D2D2D] leading-relaxed text-[1.05rem]'>{text}</h1>
+			<h1 className='font-normal text-[#2D2D2D] leading-relaxed text-[1rem]'>{text}</h1>
 		</>
 	)
 }
