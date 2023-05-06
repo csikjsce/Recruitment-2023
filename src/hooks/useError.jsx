@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useError = () => {
 	const errorData = {
@@ -18,6 +18,17 @@ const useError = () => {
 	};
 
 	const [error, setError] = useState(errorData);
+
+	useEffect(() => {
+		if (localStorage.getItem('data')) {
+			const entries = Object.entries(JSON.parse(localStorage.getItem('data'))).filter(([key, value]) => value !== '');
+			const keys = entries.map(([key, value]) => key);
+			const values = entries.map(([key, value]) => value);
+			for (let i = 0; i < keys.length; i++) {
+				validate(keys[i], values[i]);
+			}
+		}
+	}, []);
 
 	const setTrue = (key, dikkat) => {
 		setError((prev) => {

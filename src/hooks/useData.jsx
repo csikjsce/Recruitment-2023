@@ -36,8 +36,6 @@ const useForm = () => {
 		}
 	}, []);
 
-	console.log(data);
-
 	const preferences = formdata?.preference[data?.year || 2026] || [];
 
 	return { data, setData, initialData, updateData, preferences };

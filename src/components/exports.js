@@ -6,9 +6,11 @@ import FlexMembers from './MembersCard'
 import JobPostings from './JobPostings'
 import LandingNav from './LandingNav'
 import Animation from './Animation'
+import Loader from './Loader'
 import { JobList, JobPara, JobTitle, JobOpenings, JobProcedure } from './JobUtils'
 
 export {
+	Loader,
 	LandingContent,
 	LandingAsset,
 	Unsupported,

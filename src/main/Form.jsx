@@ -3,18 +3,7 @@ import { DescriptionTitle, CardContainer, FlexCol, TextInput, SelectInput, Butto
 import formdata from '../data/form/form.json';
 import attributes from '../data/form/attributes.json';
 import { useData, useError } from '../hooks/exports';
-import { Backdrop, CircularProgress } from '@mui/material';
-
-const Loader = ({ loading }) => {
-	return (
-		<Backdrop
-			sx={{ color: '#0085FF', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-			open={loading}
-		>
-			<CircularProgress color='inherit' />
-		</Backdrop>
-	);
-};
+import { Loader } from '../components/exports';
 
 const Form = ({ mobile, onState }) => {
 	const { data, setData, initialData, updateData, preferences } = useData();
@@ -28,8 +17,7 @@ const Form = ({ mobile, onState }) => {
 	const textfields2 = attributes.textfields2;
 
 	useEffect(() => {
-		let values = Object.values(error);
-		let flag = values.every((item) => item === false);
+		let flag = Object.values(error).every((item) => item === false);
 		setDisabled(!flag);
 	}, [data]);
 
@@ -50,16 +38,16 @@ const Form = ({ mobile, onState }) => {
 			},
 			body: JSON.stringify(data),
 		})
-		.then((response) => {
-			if (response.ok) {
-				setData(initialData);
-				onState('completed');
-				setLoading(false);
-			}
-		})
-		.catch((error) => {
-			console.error('Error:', error);
-		});
+			.then((response) => {
+				if (response.ok) {
+					setData(initialData);
+					onState('completed');
+					setLoading(false);
+				}
+			})
+			.catch((error) => {
+				console.error('Error:', error);
+			});
 	};
 
 	return (
