@@ -1,5 +1,5 @@
 import React from 'react'
-import { DescriptionTitle, CardContainer, DescriptionPara } from '../utilities/exports'
+import { DescriptionTitle, CardContainer } from '../utilities/exports'
 import { Animation } from '../components/exports'
 import animationData from '../data/animations/closed.json'
 

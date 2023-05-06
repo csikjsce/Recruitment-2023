@@ -32,7 +32,7 @@ const Apply = () => {
 			const data = jsondata?.default;
 			setData(data);
 		});
-	}, [parent_route]);
+	}, [parent_route, child_route]);
 
 	let stateContent = null;
 
@@ -69,6 +69,8 @@ const Apply = () => {
 		case 'completed':
 			stateContent = <Completed mobile={isMobile} />;
 			break;
+		default:
+			stateContent = null;
 	}
 
 	return (

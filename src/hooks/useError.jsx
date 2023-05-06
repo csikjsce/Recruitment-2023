@@ -19,17 +19,6 @@ const useError = () => {
 
 	const [error, setError] = useState(errorData);
 
-	useEffect(() => {
-		if (localStorage.getItem('data')) {
-			const entries = Object.entries(JSON.parse(localStorage.getItem('data'))).filter(([key, value]) => value !== '');
-			const keys = entries.map(([key, value]) => key);
-			const values = entries.map(([key, value]) => value);
-			for (let i = 0; i < keys.length; i++) {
-				validate(keys[i], values[i]);
-			}
-		}
-	}, []);
-
 	const setTrue = (key, dikkat) => {
 		setError((prev) => {
 			return { ...prev, [key]: dikkat };
@@ -52,7 +41,7 @@ const useError = () => {
 				}
 				break;
 			case 'email':
-				if (!value.match(/^[\w-\.]+@somaiya\.edu$/)) {
+				if (!value.match(/^[\w-/.]+@somaiya\.edu$/)) {
 					setTrue('email', 'Invalid email address');
 				} else {
 					setFalse('email');
@@ -123,8 +112,22 @@ const useError = () => {
 					setFalse('q2');
 				}
 				break;
+			default:
+				break;
 		}
 	};
+
+	useEffect(() => {
+		if (localStorage.getItem('data')) {
+			const entries = Object.entries(JSON.parse(localStorage.getItem('data'))).filter(([key, value]) => value !== '');
+			const keys = entries.map(([key, value]) => key);
+			const values = entries.map(([key, value]) => value);
+			for (let i = 0; i < keys.length; i++) {
+				validate(keys[i], values[i]);
+			}
+		}
+		// eslint-disable-next-line
+	}, []);
 
 	return { error, setError, validate };
 };

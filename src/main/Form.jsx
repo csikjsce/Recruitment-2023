@@ -19,7 +19,7 @@ const Form = ({ mobile, onState }) => {
 	useEffect(() => {
 		let flag = Object.values(error).every((item) => item === false);
 		setDisabled(!flag);
-	}, [data]);
+	}, [data, error]);
 
 	useEffect(() => {
 		if (!Object.values(data).every((item) => item === '')) {
@@ -82,7 +82,7 @@ const Form = ({ mobile, onState }) => {
 						<SelectInput
 							key={index}
 							label={item?.label}
-							on={item?.menu !== 'preferences' ? true : data.year != '' ? true : false}
+							on={item?.menu !== 'preferences' ? true : data.year !== '' ? true : false}
 							menu={item?.menu === 'preferences' ? preferences : formdata?.[item?.menu]}
 							onData={(value) => {
 								updateData(item?.key, value);

@@ -1,4 +1,4 @@
-import { Container, FlexCol, ScreenText } from '../utilities/exports'
+import { Container, FlexCol } from '../utilities/exports'
 import { FlexHeads, FlexMembers } from './exports'
 import { forwardRef } from 'react'
 
