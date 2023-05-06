@@ -1,10 +1,10 @@
 {
 	"title": "Technical Team",
 	"for": "SY Students",
-	"about": "BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH",
-	"responsibilities": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"skills": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"perks": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"about": "The Tech Team members are responsible for assisting the Tech Head in managing the technical aspects of all council events and initiatives.",
+	"responsibilities": ["The Tech Team members will be responsible for assisting the Tech Head in managing the technical aspects of all events and initiatives", "They will help with tasks such as website development, app development, and technical support."],
+	"skills": ["Good technical skills, including knowledge of programming languages and software tools, are essential for this role.", "The candidate should also possess good problem-solving and communication abilities.", "Frontend Development skills are essential for this role.", "Basic knowledge of competetive programming is recommended"],
+	"perks": ["The Tech Team members will gain valuable experience in technical management and support.", "They will also receive a letter of appreciation at the end of their tenure."],
 	"procedure": ["Review of Resumes", "Interview Based", "Faculty Interview Based"],
 	"openings": 4
 }
