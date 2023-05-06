@@ -1,10 +1,10 @@
 {
 	"title": "Finance Team",
 	"for": "SY Students",
-	"about": "BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH",
-	"responsibilities": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"skills": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
-	"perks": ["BLAH", "BLAH BLAH", "BLAH BLAH BLAH"],
+	"about": "The Finance Team members are responsible for assisting the Financial Secretary in managing the finances of the council.",
+	"responsibilities": ["The Finance Team members will be responsible for assisting the Financial Secretary in maintaining the council's financial records and managing the budget for all events and initiatives.", "They will also help with tasks such as expense tracking and reimbursement."],
+	"skills": ["Strong numerical and analytical skills are essential for this role", "The candidate should also possess good communication and organizational abilities."],
+	"perks": ["The Finance Team members will gain valuable experience in financial management and budgeting. ", "They will also receive a letter of appreciation at the end of their tenure."],
 	"procedure": ["Review of Resumes", "Interview Based", "Faculty Interview Based"],
-	"openings": 4
+	"openings": 2
 }
