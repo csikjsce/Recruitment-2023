@@ -21,7 +21,7 @@ const Preloader = memo(() => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowPreloader(false);
-    }, 1000);
+    }, 2500);
 
     return () => clearTimeout(timeoutId);
   }, []);

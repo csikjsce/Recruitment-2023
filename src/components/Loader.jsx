@@ -1,18 +1,13 @@
 import React from 'react';
-import { Backdrop } from '@mui/material';
-import animationData from '../data/animations/preloader.json';
-import { Animation } from './exports';
+import { Backdrop, CircularProgress } from '@mui/material';
 
 const Loader = ({loading}) => {
 	return (
 		<Backdrop
-			sx={{ color: '#0085FF', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+			sx={{ color: '#FFF', zIndex: (theme) => theme.zIndex.drawer + 1 }}
 			open={loading}
 		>
-			<Animation
-				size={250}
-				animationData={animationData}
-			/>
+			<CircularProgress color="inherit" />
 		</Backdrop>
 	);
 };
