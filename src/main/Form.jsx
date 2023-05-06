@@ -50,16 +50,16 @@ const Form = ({ mobile, onState }) => {
 			},
 			body: JSON.stringify(data),
 		})
-			.then((response) => {
-				if (response.ok) {
-					setData(initialData);
-					onState('completed');
-					setLoading(false);
-				}
-			})
-			.catch((error) => {
-				console.error('Error:', error);
-			});
+		.then((response) => {
+			if (response.ok) {
+				setData(initialData);
+				onState('completed');
+				setLoading(false);
+			}
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+		});
 	};
 
 	return (
