@@ -121,7 +121,7 @@ const JobOpenings = ({ data, mobile, route }) => {
 								mobile={mobile}
 							/>
 							<DescriptionPara
-								text={`${data?.openings[0]}`}
+								text={`${data?.openings[1]}`}
 								mobile={mobile}
 							/>
 						</FlexRow>
