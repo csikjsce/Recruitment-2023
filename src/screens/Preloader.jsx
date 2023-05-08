@@ -3,7 +3,7 @@ import { Container } from "../utilities/exports";
 import { Animation } from "../components/exports";
 import animationData from "../data/animations/preloader.json";
 
-const Preloader = memo(() => {
+const Preloader = memo(({ image }) => {
   const [showPreloader, setShowPreloader] = useState(true);
 
   const styles = {
@@ -42,7 +42,11 @@ const Preloader = memo(() => {
           className="flex justify-center items-center bg-[#efffff]"
           style={styles}
         >
-          <Animation size={300} animationData={animationData} />
+          {image ? (
+            <img src={image} style={{width:"100%", height: "12rem", objectFit: "contain"}}/>
+          ) : (
+            <Animation size={300} animationData={animationData} />
+          )}
         </Container>
       )}
     </>

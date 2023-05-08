@@ -35,7 +35,7 @@ const FlexHeads = memo(({ isMobile }) => {
 							mobile={isMobile}
 							onClick={() => {
 								navigate('/apply', {
-									state: { key: item.key },
+									state: { key: item.key, image: item.image },
 								})
 							}}
 						/>
