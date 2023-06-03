@@ -75,7 +75,7 @@ const Apply = () => {
 
 	return (
 		<>
-			<Preloader image={location.state.image} />
+			<Preloader />
 			<Container
 				mobile={isMobile}
 				py={true}
