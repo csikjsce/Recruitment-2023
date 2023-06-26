@@ -7,7 +7,7 @@ import { Preloader } from './exports';
 const Apply = () => {
 	const [isMobile, setIsMobile] = useState(null);
 	const [data, setData] = useState(null);
-	const [state, setState] = useState('open');
+	const [state, setState] = useState('closed');
 
 	useEffect(() => {
 		const handleResize = () => {
