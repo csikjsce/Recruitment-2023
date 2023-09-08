@@ -48,20 +48,24 @@ const Apply = () => {
   }, [data, normalFormState, fyRepFormState]);
 
   useEffect(() => {
-    const storageValue = localStorage.getItem("state");
-    if (storageValue === "completed") {
+    const normalFormStorageValue = localStorage.getItem("normalFormState");
+    if (normalFormStorageValue === "completed") {
       setNormalFormState("completed");
+    }
+
+    const fyRepFormStorageValue = localStorage.getItem("fyRepFormState");
+    if (fyRepFormStorageValue === "completed") {
       setFYRepFormState("completed");
     }
   }, []);
 
   const handleNormalFormSubmit = () => {
-    localStorage.setItem("state", "completed");
+    localStorage.setItem("normalFormState", "completed");
     setNormalFormState("completed");
   };
 
   const handleFYRepFormSubmit = () => {
-    localStorage.setItem("state", "completed");
+    localStorage.setItem("fyRepFormState", "completed");
     setFYRepFormState("completed");
   };
 
