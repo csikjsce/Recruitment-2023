@@ -1,0 +1,19 @@
+{
+  "branch": [
+    "COMPS",
+    "IT",
+    "EXCP",
+    "EXTC",
+    "ETRX",
+    "MECH",
+    "AI-DS",
+    "CCE",
+    "RAI"
+  ],
+  "preferences": [
+    "Technical Team",
+    "Creative Team",
+    "Operations Team",
+    "Finance Team"
+  ]
+}

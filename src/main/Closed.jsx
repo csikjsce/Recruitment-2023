@@ -12,7 +12,7 @@ const Closed = ({ mobile }) => {
 				classFlex='!items-center !gap-0'
 				mobile={mobile}>
 				<DescriptionTitle
-					text='Application Closed'
+					text='Applications Closed'
 					mobile={mobile}
 				/>
 				<Animation

@@ -13,9 +13,9 @@ const Navbar = ({ mobile }) => {
 						alt=''
 						className='w-[auto] h-[30px]'
 					/>
-					<NavbarTitle text='CSI-KJSCE Recruitment 23-24' />
+					<NavbarTitle text='CSI-KJSCE Recruitment' />
 				</FlexRow>
-				<NavbarSubtitle text='Last Date to Apply 25th June' />
+				<NavbarSubtitle text='Last Date to Apply 17th September' />
 			</FlexRow>
 		</>
 	)

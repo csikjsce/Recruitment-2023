@@ -43,7 +43,7 @@ const Preloader = memo(({ image }) => {
           style={styles}
         >
           {image ? (
-            <img src={image} style={{width:"100%", height: "12rem", objectFit: "contain"}}/>
+            <img src={image} style={{width:"100%", height: "12rem", objectFit: "contain"}} alt=""/>
           ) : (
             <Animation size={300} animationData={animationData} />
           )}

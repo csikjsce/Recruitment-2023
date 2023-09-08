@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo } from "react";
 import { FlexCol } from "./Flex";
 import {
   ModalTitle,
@@ -19,34 +19,21 @@ const ModalCard = ({ title, subtitle }) => {
 };
 
 const HeadsCard = memo(({ title, subtitle, image, mobile, onClick }) => {
-  const [animateImage, setAnimateImage] = useState(false);
   const size = mobile ? "!w-[70vw]" : "!w-[15vw]";
   const classes =
     "!items-start !justify-end bg-[#FCFEFE80] border-[3px] border-[#FFF] rounded-lg !h-[auto] px-4 pt-20 py-6 lg:hover:shadow-lg shadow-md gap-1 " +
     size;
-  const animate = () => {
-    setAnimateImage(true);
-  };
   return (
     <>
-      <div
-        onClick={() => {
-          // animate();
-          
-          onClick();
-          //   setTimeout(() => {
-          //   }, 5000);
-        }}
-        className={`cursor-pointer transition-all ${animateImage ? " w-full fixed h-full flex items-center justify-center bg-[#efffff] inset-0 z-50" : ""}`}
-      >
+      <div onClick={onClick} className="cursor-pointer transition-all">
         <FlexCol>
           <img
             src={image}
             alt="asset"
             loading="lazy"
-            className={`h-[165px] transition-all ${animateImage ? "translate-y-0" : "translate-y-16"}`}
+            className="h-[150px] translate-y-16"
           />
-          <FlexCol className={classes + `${animateImage ? " !hidden" : ""}`}>
+          <FlexCol className={classes}>
             <CardTitle text={title} />
             <CardSubtitle text={subtitle} />
           </FlexCol>

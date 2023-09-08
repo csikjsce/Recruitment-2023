@@ -1,0 +1,39 @@
+{
+    "textfields1": [
+      {
+        "label": "Full Name",
+        "key": "username"
+      },
+      {
+        "label": "Somaiya Email",
+        "key": "email"
+      },
+      {
+        "label": "Phone Number",
+        "key": "phone"
+      }
+    ],
+    "selectfields": [
+      {
+        "label": "Branch",
+        "key": "branch",
+        "menu": "branch"
+      },
+      {
+        "label": "Team Preference",
+        "key": "preference",
+        "menu": "preferences"
+      }
+    ],
+    "textfields2": [
+      {
+        "label": "Resume Link",
+        "key": "resume"
+      },
+      {
+        "label": "What excites you the most to join CSI-KJSCE?",
+        "key": "question"
+      }
+    ]
+  }
+  
