@@ -20,7 +20,7 @@
         "menu": "branch"
       },
       {
-        "label": "Team Preference",
+        "label": "Interest",
         "key": "preference",
         "menu": "preferences"
       }
