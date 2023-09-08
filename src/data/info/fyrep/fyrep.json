@@ -1,31 +1,31 @@
 {
   "title": "FY Representatives",
   "for": "FY Students",
-  "about": "FY Rep allows you to actively participate in the college council's activities, gaining hands-on experience in event management, corporate engagement, teamwork, and community outreach. It also provides a platform to contribute to the council's continuous improvement and represent the interests of their peers.",
+  "about": [
+    "Elevate Your Potential with CSI-KJSCE as a First-Year Representative (FY REP). Engage actively in dynamic college council activities, gaining hands-on experience in event management, industrial relations, teamwork, and community outreach. Our council prioritizes excellence, seeking exceptional individuals who are ready for a unique opportunity. We are dedicated to your personal and professional growth, imparting skills that empower your industry success and personal development. Join CSI-KJSCE, where every day is a chance to learn, lead, and excel, positioning you ahead of your peers in all-round skills. Your brighter future starts here."
+],
   "responsibilities": [
-    "Face of Council: Representing First-Year Students and acting as a conduit for communication between the council and first-year students, ensuring their interests are considered.",
-    "Learning and Development: Actively seek opportunities to learn about event management, corporate relations, and teamwork enhancing their skills and knowledge.",
-    "Council Support and Engagement: Assist in the planning and execution of college events, including but not limited to, coding-related events, workshops, and seminars."  
+    "Your role as an FY Rep will encompass a diverse range of responsibilities, including:",
+    "Face of the Council: Serve as the voice of first-year students, facilitating communication between the council and your peers to ensure their interests are well-represented.",
+    "Learning and Growth: Embrace opportunities to learn about event management, corporate relations, and teamwork, continually enhancing your skills and knowledge.",
+    "Supporting and Engaging: Contribute to the planning and execution of council events, including coding-related activities, workshops, seminars and upcoming major events."
   ],
   "skills": [
-    "Enthusiasm and Willingness to Learn: Eagerness and Passion to expand their knowledge and skills.",
-    "Problem-Solving Abilities: Ability to analyze problems and devise solutions.",
-    "Initiative: Proactive approach to taking on tasks and responsibilities within the council.",
-    "Teamwork and Collaboration: Ability to work effectively in teams and Respect for diverse perspectives and ideas within the coding council.",
-    "Basic Coding Skills: Not necessary but better if Understanding of coding fundamentals and logic."
+    "Enthusiasm and Curiosity: A strong desire and passion for expanding your knowledge horizon and honing your skills.",
+    "Problem-Solving Proficiency: The ability to analyse complex problems and formulate effective solutions. A different perspective is always appreciated.",
+    "Proactive Initiative: A proactive intent to undertake responsibilities and tasks within the council.",
+    "Versatility: The capability to work harmoniously in diverse teams while respecting a spectrum of viewpoints and ideas.",
+    "Fundamental Coding Aptitude: While not mandatory, an understanding of coding fundamentals and logical thinking can be advantageous."
   ],
   "perks": [
-    "Learning Opportunities: Exposure to real-world projects and challenges.",
-    "Networking and Community: Connect with like-minded peers, seniors members and mentors for guidance.",
-    "Skill Development: Development of coding and problem-solving skills, management skills and personality.",
-    "Leadership and Responsibility: Chances to take on leadership roles within the council,responsibility of helping organize major events.",
-    "Internship Credits: Get the internship hours for your work in the council"
+    "Learning Opportunities: Gain exposure to how organisations work and confront challenging scenarios.",
+    "Networking and Community: Connect with like-minded peers, experienced senior members, and mentors who offer valuable guidance.",
+    "Skill Enhancement: Develop coding and problem-solving abilities, refine your management skills, and enhance your overall personality.",
+    "Leadership and Responsibility: Assume leadership roles within the council, playing a pivotal part in organising major events.",
+    "Internship Accreditation: Earn internship hours for your dedicated work within the council."
+
   ],
-  "procedure": [
-    "Review of Resumes",
-    "Interview Based",
-    "Faculty Interview Based"
-  ],
+  "procedure": ["Review of Resumes", "Interview Based", "Faculty Interview Based"],
   "resume": "https://drive.google.com/drive/folders/1qMHUSixUEioBfmY8cxHYzLr3K062Rlfn?usp=sharing",
   "openings": "6 First Year Representatives"
 }
