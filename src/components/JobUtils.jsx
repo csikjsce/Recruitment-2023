@@ -42,6 +42,24 @@ const JobPara = ({ data, mobile, keyname, title }) => {
 	)
 }
 
+const JobLink = ({ mobile, keyname, title, link }) => {
+	return (
+		<>
+			<FlexCol className='!items-start !gap-2'>
+				<DescriptionSubtitle
+					text={title}
+					mobile={mobile}
+				/>
+				<DescriptionPara
+					text={keyname}
+					mobile={mobile}
+					link={link}
+				/>
+			</FlexCol>
+		</>
+	)
+}
+
 const JobProcedure = ({ data, mobile, keyname, title }) => {
 	return (
 		<>
@@ -137,4 +155,4 @@ const JobOpenings = ({ data, mobile, route }) => {
 	)
 }
 
-export { JobTitle, JobPara, JobList, JobOpenings, JobProcedure }
+export { JobTitle, JobPara, JobList, JobLink, JobOpenings, JobProcedure }

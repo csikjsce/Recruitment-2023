@@ -9,7 +9,7 @@ import LandingNav from './LandingNav'
 import Animation from './Animation'
 import Loader from './Loader'
 import Footer from './Footer'
-import { JobList, JobPara, JobTitle, JobOpenings, JobProcedure } from './JobUtils'
+import { JobList, JobPara, JobTitle, JobOpenings, JobProcedure , JobLink} from './JobUtils'
 
 export {
 	Loader,
@@ -24,6 +24,7 @@ export {
 	JobList,
 	JobPara,
 	JobTitle,
+	JobLink,
 	JobOpenings,
 	JobProcedure,
 	Animation,
