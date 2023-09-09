@@ -97,7 +97,7 @@ const FYRepForm = ({ mobile, onState }) => {
 						<TextInput
 							key={index}
 							label={item?.label}
-							rows={item?.key !== 'resume' ? 4 : null}
+							rows={item?.key !== 'resume' ? 5 : null}
 							placeholder={item?.key !== 'resume' ? item?.label : 'Public Google Drive or Google Docs link'}
 							onData={(value) => {
 								updateData(item?.key, value);

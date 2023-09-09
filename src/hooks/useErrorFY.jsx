@@ -10,7 +10,6 @@ const useError = () => {
     resume: null,
     question1: null,
     question2: null,
-    question3: null,
   };
 
   const [error, setError] = useState(errorData);
@@ -87,13 +86,6 @@ const useError = () => {
           setTrue("question2", "Answer must be atleast 100 characters long");
         } else {
           setFalse("question2");
-        }
-        break;
-      case "question3":
-        if (value.length < 100) {
-          setTrue("question3", "Answer must be atleast 100 characters long");
-        } else {
-          setFalse("question3");
         }
         break;
       default:

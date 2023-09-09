@@ -10,7 +10,6 @@ const useForm = () => {
     resume: "",
     question1: "",
     question2: "",
-    question3: "",
   };
 
   const [data, setData] = useState(initialData);

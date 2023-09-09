@@ -35,12 +35,8 @@
         "key": "question1"
       },
       {
-        "label": "What excites you the most to join CSI-KJSCE?",
+        "label": "What skills or qualities make you an exceptional candidate for CSI-KJSCE?",
         "key": "question2"
-      },
-      {
-        "label": "What excites you the most to join CSI-KJSCE?",
-        "key": "question3"
       }
     ]
   }
