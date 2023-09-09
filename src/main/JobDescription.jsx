@@ -6,7 +6,7 @@ import {
   JobTitle,
   JobOpenings,
   JobProcedure,
-  JobResume
+  JobResume,
 } from "../components/exports";
 
 const JobDescription = ({ data, route, mobile }) => {
@@ -43,12 +43,14 @@ const JobDescription = ({ data, route, mobile }) => {
             title="Perks and Benefits"
             mobile={mobile}
           />
-          <JobResume
-            data={data}
-            keyname="resume"
-            title="Resume Guide and Tips"
-            mobile={mobile}
-          />
+          {data?.resume && (
+            <JobResume
+              data={data}
+              keyname="resume"
+              title="Resume Guide and Tips"
+              mobile={mobile}
+            />
+          )}
           <JobList
             data={data}
             keyname="procedure"
