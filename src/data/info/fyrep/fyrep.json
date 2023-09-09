@@ -2,8 +2,8 @@
   "title": "FY Representatives",
   "for": "FY Students",
   "about": [
-    "Elevate Your Potential with CSI-KJSCE as a First-Year Representative (FY REP). Engage actively in dynamic college council activities, gaining hands-on experience in event management, industrial relations, teamwork, and community outreach. Our council prioritizes excellence, seeking exceptional individuals who are ready for a unique opportunity. We are dedicated to your personal and professional growth, imparting skills that empower your industry success and personal development. Join CSI-KJSCE, where every day is a chance to learn, lead, and excel, positioning you ahead of your peers in all-round skills. Your brighter future starts here."
-],
+    "Elevate Your Potential with CSI-KJSCE as a First-Year Representatives. Engage actively in dynamic college council activities, gaining hands-on experience in event management, industrial relations, teamwork, and community outreach. Our council prioritizes excellence, seeking exceptional individuals who are ready for a unique opportunity. We are dedicated to your personal and professional growth, imparting skills that empower your industry success and personal development. Join CSI-KJSCE, where every day is a chance to learn, lead, and excel, positioning you ahead of your peers in all-round skills. Your brighter future starts here."
+  ],
   "responsibilities": [
     "Your role as an FY Rep will encompass a diverse range of responsibilities, including:",
     "Face of the Council: Serve as the voice of first-year students, facilitating communication between the council and your peers to ensure their interests are well-represented.",
@@ -23,9 +23,18 @@
     "Skill Enhancement: Develop coding and problem-solving abilities, refine your management skills, and enhance your overall personality.",
     "Leadership and Responsibility: Assume leadership roles within the council, playing a pivotal part in organising major events.",
     "Internship Accreditation: Earn internship hours for your dedicated work within the council."
-
   ],
-  "procedure": ["Review of Resumes", "Interview Based", "Faculty Interview Based"],
-  "resume": "https://drive.google.com/drive/folders/1qMHUSixUEioBfmY8cxHYzLr3K062Rlfn?usp=sharing",
-  "openings": "6 First Year Representatives"
+  "procedure": [
+    "Shortlisting based on Submitted Resumes and Form Question responses [Top 40 Shortlisted]",
+    "15-20 minute offline interviews with the Top 40 selected from Round 1, based on various aspects [Top 6 Shortlisted]",
+    "Faculty interviews with the Top 6 selected FY Reps from Round 2 to finalize the selection [Top 6 Finalized]"
+  ],
+  "resume": [
+    ["Begin by researching CSI to understand what we are looking for because the best candidates are those who understand what the recruiters want. Read the Job Description above to understand what we want.", null],
+    ["Get familiar with resumes and their significance in the recruitment process. Watch this informative video [Here] to learn more.", "https://youtu.be/y8YH0Qbu5h4?si=vZfvwAFEycALN60T"],
+    ["To excel in the initial resume-based round, create a comprehensive resume that effectively highlights your achievements and experiences. Consult this detailed Resume Guide [Here] for assistance.", "https://drive.google.com/file/d/1MKcnAh-3PYWc6Ox4zpuspJeOpu9G1AQ6/view?usp=sharing"],
+    ["Make use of user-friendly resume templates available on platforms like Canva, Overleaf, etc. Customize the template to showcase your qualifications optimally. Explore some beginner friendly templates for inspiration [Here].", "https://www.canva.com/templates/?query=resume"],
+    ["Create your resume using the chosen template, review and meticulously proofread your resume to present yourself in the best possible light to us.", null]
+  ],
+  "openings": "6 First Year Representatives [FY Reps] for the Academic Year 2023-24"
 }

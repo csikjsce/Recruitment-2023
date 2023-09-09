@@ -147,16 +147,21 @@ const DescriptionSubtitle = ({ text, mobile }) => {
 
 const DescriptionPara = ({ text, mobile, className, link }) => {
   const size = mobile ? "text-[0.9rem]" : "text-[1rem]";
-  const classes = `font-normal text-[#454545] text-left leading-relaxed ${size} ${className}`;
+  const classes = `font-normal text-[#454545] text-justify leading-relaxed ${size} ${className}`;
+  const pattern = /\[Here\]/gi;
+  const modifiedText = link
+    ? text.replace(
+        pattern,
+        `<a href="${link}" target="_blank" rel="noopener noreferrer"><u>[Here]</u></a>`
+      )
+    : text;
+
   return (
     <>
-      {link ? (
-        <a href={link} target="_blank" rel="noreferrer">
-          <h1 className={classes + " underline italic"}>{text}</h1>
-        </a>
-      ) : (
-        <h1 className={classes}>{text}</h1>
-      )}
+      <p
+        className={classes}
+        dangerouslySetInnerHTML={{ __html: modifiedText }}
+      ></p>
     </>
   );
 };

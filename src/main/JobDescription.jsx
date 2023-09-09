@@ -6,7 +6,7 @@ import {
   JobTitle,
   JobOpenings,
   JobProcedure,
-  JobLink,
+  JobResume
 } from "../components/exports";
 
 const JobDescription = ({ data, route, mobile }) => {
@@ -37,21 +37,24 @@ const JobDescription = ({ data, route, mobile }) => {
             title="Responsibilities"
             mobile={mobile}
           />
-          <JobList data={data} keyname="perks" title="Perks" mobile={mobile} />
-          <JobProcedure
+          <JobList
+            data={data}
+            keyname="perks"
+            title="Perks and Benefits"
+            mobile={mobile}
+          />
+          <JobResume
+            data={data}
+            keyname="resume"
+            title="Resume Guide and Tips"
+            mobile={mobile}
+          />
+          <JobList
             data={data}
             keyname="procedure"
             title="Selection Procedure"
             mobile={mobile}
           />
-          {data?.resume && (
-            <JobLink
-              keyname="Click here for Google Drive Link to Resume Guide and Samples"
-              title="Resume Guide and Samples"
-              link={data.resume}
-              mobile={mobile}
-            />
-          )}
           <JobOpenings data={data} route={route} mobile={mobile} />
         </FlexCol>
       </CardContainer>
