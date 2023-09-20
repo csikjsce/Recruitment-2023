@@ -15,7 +15,7 @@ const Navbar = ({ mobile }) => {
 					/>
 					<NavbarTitle text='CSI-KJSCE Recruitment' />
 				</FlexRow>
-				<NavbarSubtitle text='Last Date to Apply 20th September' />
+				<NavbarSubtitle text='Last Date to Apply 22nd September' />
 			</FlexRow>
 		</>
 	)

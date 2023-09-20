@@ -38,7 +38,7 @@ const LandingText = ({onClick}) => {
 					<LandingPara
 						mobile={isMobile}
 						text="Last date to apply: "
-						bold="20th September, 11:59 PM IST"
+						bold="22nd September, 11:59 PM IST"
 					/>
 				</FlexCol>
 				<FlexCol className={`!items-start ${isMobile ? "!mt-2" : "!mt-8"}`}>
