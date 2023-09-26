@@ -14,7 +14,7 @@ const Apply = () => {
   const [isMobile, setIsMobile] = useState(null);
   const [data, setData] = useState(null);
   const [normalFormState, setNormalFormState] = useState("closed");
-  const [fyRepFormState, setFYRepFormState] = useState("open");
+  const [fyRepFormState, setFYRepFormState] = useState("closed");
 
   useEffect(() => {
     const handleResize = () => {
