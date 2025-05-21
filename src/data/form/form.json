@@ -1,8 +1,8 @@
 {
-  "branch": ["COMPS", "IT", "EXCP", "EXTC", "ETRX", "MECH"],
-  "year": ["2025", "2026"],
+  "branch": ["COMPS", "IT", "EXCP", "EXTC", "ETRX", "MECH","AIDS","CCE","RAI"],
+  "year": ["2026","2027"],
   "preference": {
-    "2025": [
+    "2027": [
       "General Secretary",
       "Jt General Secretary",
       "Financial Secretary",
@@ -13,11 +13,10 @@
       "Operations Head",
       "Jt Operations Head"
     ],
-    "2026": [
+    "2028": [
       "Finance Team",
       "Technical Team",
       "Creative Team",
       "Operations Team"
     ]
   }
-}
