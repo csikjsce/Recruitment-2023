@@ -13,7 +13,7 @@ import { Preloader } from "./exports";
 const Apply = () => {
   const [isMobile, setIsMobile] = useState(null);
   const [data, setData] = useState(null);
-  const [normalFormState, setNormalFormState] = useState("closed");
+  const [normalFormState, setNormalFormState] = useState("open");
   const [fyRepFormState, setFYRepFormState] = useState("closed");
 
   useEffect(() => {
