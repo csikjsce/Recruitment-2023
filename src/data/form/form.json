@@ -1,5 +1,5 @@
 {
-  "branch": ["COMPS", "IT", "EXCP", "EXTC", "ETRX", "MECH","AIDS","CCE","RAI"],
+  "branch": ["COMPS", "IT", "EXCP", "EXTC", "ETRX", "MECH","AIDS","CCE","RAI","CSBS"],
   "year": ["2027","2028"],
   "preference": {
     "2027": [
